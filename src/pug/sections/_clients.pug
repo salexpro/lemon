@@ -1,0 +1,18 @@
+mixin client(img, name)
+    .clients_item
+        img(src=`./assets/img/clients/${img}.png` srcset=`./assets/img/clients/${img}.png 1x, ./assets/img/clients/${img}@2x.png 2x` alt=name)
+
+section#clients.clients(data-magellan-target="clients")
+    .grid-container
+        h2
+            | Clients and brands,
+            br
+            | we worked 
+            strong(data-line=Array(8).join('.')) with.
+        .clients_items
+            each _ in Array(3)
+                +client('adidas', 'Adidas')
+            each _ in Array(3)
+                +client('play2live', 'Play 2 Live')
+            each _ in Array(3)
+                +client('minter_one', 'Minter One')

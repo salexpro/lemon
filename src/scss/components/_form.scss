@@ -1,0 +1,46 @@
+.form{
+    margin-top: 200px;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 251.5px;
+        width: calc(50% - (965px / 2) + 60px);
+        height: 145px;
+        background: url('data:image/svg+xml;utf8,<svg width="21" height="20" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle  fill="#FBDA5A" cx="2" cy="2" r="2"></circle></svg>');
+    }
+    &_block{
+        background-color: $main-gray;
+        position: relative;
+        padding: 80px 100px 100px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            border-bottom: 10px solid $secondary-color;
+        }
+        &_container{
+            margin-top: 80px;
+        }
+        &_row{
+            display: flex;
+        }
+        &_bottom{
+            text-align: right;
+            margin-top: 40px;
+        }
+    }
+    &_input{
+        width: 100%;
+        margin-bottom: 30px;
+        + .form_input{
+            margin-left: 25px;
+        }
+        textarea{
+            min-width: 100%;
+        }
+    }
+}

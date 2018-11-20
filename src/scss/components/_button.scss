@@ -1,0 +1,18 @@
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+.button{
+    font-weight: 800;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 306px;
+    &.large{
+        min-width: 410px;
+    }
+    &.larger{
+        min-width: 450px;
+    }
+}

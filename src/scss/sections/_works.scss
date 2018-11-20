@@ -1,0 +1,32 @@
+.works{
+    position: relative;
+    margin-bottom: 200px;
+    &_items{
+        display: flex;
+        margin-top: 54px;
+    }
+    &_carousel{
+        width: calc(50vw + (995px / 2) - 121px - 75px);
+    }
+    &_item{
+        margin-right: 40px;
+        outline: none;
+        &:last-child{
+            margin: 0;
+        }
+        &_content{
+            background-color: $main-gray;
+            padding: 30px 45px 48px;
+            &_top{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        &_header{
+            margin-bottom: 2px;
+        }
+        &_descr{
+            font-size: 13px;
+        }
+    }
+}

@@ -18,7 +18,10 @@
   "homepage": "https://github.com/salexpro/foundation-boilerplate#readme",
   "dependencies": {
     "foundation-sites": "^6.5.1",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "lodash.debounce": "^4.0.8",
+    "lodash.throttle": "^4.1.1",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",

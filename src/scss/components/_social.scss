@@ -1,0 +1,14 @@
+.social{
+    margin: 0;
+    li{
+        margin: 14px 0;
+    }
+    use{
+        transition: 400ms;
+    }
+    a:hover{
+        use{
+            fill: $primary-color;
+        }
+    }
+}

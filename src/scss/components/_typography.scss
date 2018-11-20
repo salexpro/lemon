@@ -1,0 +1,37 @@
+h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+    letter-spacing: -0.13px;
+    strong{
+        position: relative;
+        z-index: 1;
+        &::after{
+            content: attr(data-line);
+            font-family: monospace;
+            position: absolute;
+            left: -3px;
+            bottom: 10px;
+            z-index: -1;
+            height: 22px;
+            width: auto;
+            background-color: $primary-color;
+            color: $primary-color;
+            font-size: 1.01em;
+            white-space: nowrap;
+            line-height: 0;
+        }
+    }
+}
+
+.stat{
+    letter-spacing: 1.76px;
+    margin-bottom: 20px;
+    img{
+        vertical-align: bottom;
+        margin-bottom: -2px;
+    }
+    svg{
+        vertical-align: baseline;
+        display: inline;
+        margin-bottom: -1px;
+        margin-left: 20px;
+    }
+}

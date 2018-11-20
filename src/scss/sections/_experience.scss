@@ -1,0 +1,22 @@
+.experience{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 202px;
+    padding-bottom: 202px;
+    &_item{
+        position: relative;
+        &_num{
+            font-size: 200px;
+            line-height: 0.83;
+            font-weight: 900;
+            color: $primary-color;
+        }
+        &_text{
+            position: absolute;
+            top: calc(50% - 5px);
+            left: 54px;
+            white-space: nowrap;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.achievements{
+    &_header{
+        line-height: 1.09;
+        position: absolute;
+        left: 45px;
+        top: -26px;
+    }
+    &_content{
+        background-color: $main-gray;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 70px 45px 50px;
+    }
+    &_bottom{
+        text-align: right;
+    }
+}

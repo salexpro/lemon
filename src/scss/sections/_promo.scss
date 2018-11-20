@@ -1,0 +1,37 @@
+.promo{
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    &_inner{
+        width: 100%;
+    }
+    &_logo{
+        position: absolute;
+        top: 45px;
+        left: 20px;
+        width: 112px;
+    }
+    &_arrow{
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
+        transform: rotate(90deg);
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 400ms;
+        &:hover{
+            background-color: $primary-color;
+        }
+    }
+}
+
+#main{
+    position: absolute;
+    top: 25px;
+    left: 0;
+}

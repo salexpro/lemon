@@ -1,0 +1,15 @@
+extends ../_layout
+block content
+    include ../sections/_promo
+    include ../sections/_projects
+    include ../sections/_achievements
+    +form(`Book a call <br>to discuss your <strong data-line=${Array(9).join('.')}>project.</strong>`, 'call')
+    include ../sections/_clients
+    include ../sections/_subscribe
+    include ../sections/_works
+    include ../sections/_ico
+    include ../sections/_team
+    include ../sections/_advisors
+    include ../sections/_experience
+    include ../sections/_reviews
+    +form(`Let's keep <br><strong data-line=${Array(9).join('.')}>in touch</strong>`)

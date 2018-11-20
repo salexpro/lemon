@@ -1,0 +1,18 @@
+mixin form(header, mod)
+    section.form(data-magellan-target=!mod?'contacts':false id=!mod?'contacts':false)
+        .grid-container
+            .form_block
+                h2!=header
+                form.form_block_container(action="")
+                    .form_block_row
+                        .form_input
+                            input(type="text" name="name" value="Konstantine" placeholder="Name" required)
+                        .form_input
+                            input(type="email" name="email" placeholder="Email" required)
+                    .form_input
+                        textarea(name="message" placeholder= mod ? "When we can help you" : "Write us a line" required=!mod)
+                    .form_block_bottom    
+                        button.button
+                            | Send
+                            span.button_icon
+                                +icon('arrow', [24, 14], '#454545')

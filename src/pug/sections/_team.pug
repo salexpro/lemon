@@ -1,0 +1,40 @@
+mixin member(name, position, company, mod)
+    .team_member(class=mod ? 'team_member--' + mod : false)
+        .team_member_photo
+            img(src="https://placeimg.com/170/170/people?" + Math.random(), alt=name)
+        .team_member_info
+            #{!mod ? 'h3' : 'p'}(class=mod?'h3':'').team_member_name
+                =name
+            .team_member_company
+                =position
+                if company
+                    span=company
+
+mixin team_item(bg, num, prefix, position)
+    .team_num
+        .team_num_bg
+            +icon(...bg)
+        h4.team_num_info
+            span.stat
+                =num
+            small=prefix
+            =position
+
+section#team.team(data-magellan-target="team")
+    .grid-container
+        h2
+            | Our outstanding
+            br
+            strong(data-line=Array(7).join('.')) team.
+        .team_members
+            each _ in Array(2)
+                +member('Andrew Surname', 'Cofounder')
+        .team_numbers
+            .team_numbers_row
+                +team_item(['blot_1', [82, 84], '#ffcb01'], 2, 'wonderfull', 'art directors')
+                +team_item(['blot_2', [86, 82], '#ffcb01'], 13, 'superb', 'animators')
+                +team_item(['blot_3', [90, 84], '#ffcb01'], 3, 'gorgeous', 'scriptwriters')
+            .team_numbers_row
+                +team_item(['blot_3', [90, 84], '#ffcb01'], 9, 'nice', 'people')
+                +team_item(['blot_1', [82, 84], '#ffcb01'], 4, 'handsome', 'illustrators')
+                +team_item(['blot_2', [86, 82], '#ffcb01'], 81, 'superb', 'grannies')

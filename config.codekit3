@@ -146,6 +146,39 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"/node_modules/lodash.throttle/index.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/lodash.throttle/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/slick-carousel/slick/slick.min.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/slick-carousel/slick/slick.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/slick-carousel/slick/slick.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/slick-carousel/css/slick.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/package-lock.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -185,13 +218,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "/build/assets/favicon/.gitkeep",
-		"oF": 0
-		},
-	"/src/assets/fonts/.gitkeep": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "/build/assets/fonts/.gitkeep",
 		"oF": 0
 		},
 	"/src/assets/img/achievements/behance_ae.png": {
@@ -413,6 +439,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/build/js/app.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/src/js/components/_carousel.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/js/components/_carousel.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -777,6 +813,32 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/src/scss/sections/_clients.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_clients.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_experience.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_experience.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/src/scss/sections/_footer.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -786,6 +848,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/build/scss/css/_footer.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_ico.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_ico.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -825,6 +900,58 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/build/scss/css/_promo.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_reviews.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_reviews.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_subscribe.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_subscribe.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_team.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_team.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_works.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_works.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1

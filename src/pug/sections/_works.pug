@@ -1,0 +1,34 @@
+- const categories = ['bank', 'blockchain', 'sport', 'apps'];
+
+mixin work(header, description, labels)
+    .works_item(data-labels=labels.join(' '))
+        .works_item_img
+            img(src="//picsum.photos/1120/630/?random&" + Math.random(), alt=header)
+        .works_item_content
+            .works_item_content_top
+                h3.works_item_header
+                    =header
+                .works_item_labels
+                    each label in labels
+                        span.label.small
+                            =label
+            p.works_item_descr
+                !=description
+
+section#works.works(data-magellan-target="works")
+    .grid-container
+        h2
+            | Our 
+            strong(data-line=Array(14).join('.')) outstanding 
+            br
+            small works.
+        .works_items
+            ul.menu.vertical.menu--cats(data-tabs)
+                each category in categories
+                    li.works_label
+                        a(href=`#${category}`) 
+                            =category.charAt(0).toUpperCase() + category.slice(1)
+
+            .works_carousel
+                each _ in Array(10)
+                    +work('BRD animation video', 'An ecosystem for cryptocurrency payments. Minimalistic video that consists of circles, lines, lights and shades.', categories.sort(()=>.5-Math.random()).slice(0,2))

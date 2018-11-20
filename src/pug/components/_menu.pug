@@ -1,0 +1,37 @@
+mixin menu(mod)
+    -
+        const menu = [
+            {
+                title: 'Main',
+                link: '#main'
+            },
+            {
+                title: 'About',
+                link: '#about'
+            },
+            {
+                title: 'Clients',
+                link: '#clients'
+            },
+            {
+                title: 'Process guide',
+                link: '#guide'
+            },
+            {
+                title: 'Works',
+                link: '#works'
+            },
+            {
+                title: 'Team',
+                link: '#team'
+            },
+            {
+                title: 'Contacts',
+                link: '#contacts'
+            }
+        ]
+    ul.menu(class=mod data-magellan data-animation-duration="1000" data-animation-easing="swing" data-deep-linking='true')
+        each item in menu
+            li
+                a(href=item.link)
+                    =item.title

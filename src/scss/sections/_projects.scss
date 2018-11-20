@@ -1,0 +1,59 @@
+.projects{
+    margin-bottom: 130px;
+    &_items{
+        margin-top: 48px;
+    }
+    &_item{
+        &_img{
+            display: block;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        &_header a{
+            color: $dark-gray;
+        }
+        &_descr{
+            font-size: 13px;
+        }
+        &_labels{
+            margin-top: 10px;
+            display: flex;
+        }
+
+        &--main{
+            display: flex;
+            margin-bottom: 50px;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 45px;
+                border-bottom: 4px solid $primary-color;
+            }
+            .projects_item{
+                &_img{
+                    order: 1;
+                    margin: 0;
+                }
+                &_header{
+                    margin-bottom: 20px;
+                }
+                &_content{
+                    flex: 1 1 61%;
+                    background-color: $main-gray;
+                    padding: 37px 45px;
+                }
+            }
+        }
+    }
+}
+
+.badges{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: flex;
+}
+.badge + .badge{
+    margin-left: 10px;
+}

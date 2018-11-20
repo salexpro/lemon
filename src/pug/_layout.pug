@@ -1,0 +1,31 @@
+block const
+-
+    const title  = `Lemon Digital${name ? ' - ' + name : ''}`;
+    const descr  = 'Description';
+    const domain = 'lemon.salex.pro'
+
+mixin icon(name, size, color, viewbox)
+    - viewbox = viewbox || size
+    svg(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width=size[0] height=size[1] viewbox=viewbox ? "0 0 " + viewbox[0] + " " + viewbox[1] : "")
+        use(fill=color, xlink:href='#' + name)
+
+//- Components
+include components/_menu
+include components/_social
+include components/_form
+
+doctype html
+html(lang="en")
+    include components/_head
+    body
+        main.off-canvas-content.wrap(data-off-canvas-content)
+            include sections/_nav
+            block content
+            include sections/_footer
+            //- include components/_popup
+        include components/_offcanvas
+        block js
+            script.
+                var module = {}
+            script(src="./js/app.min.js")
+        include components/_icons

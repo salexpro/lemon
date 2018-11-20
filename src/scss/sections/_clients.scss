@@ -1,0 +1,16 @@
+.clients{
+    margin: 200px 0;
+    &_items{
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &_item{
+        width: calc(33.33% - 56px);
+        height: 125px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

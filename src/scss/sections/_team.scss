@@ -1,0 +1,108 @@
+.team{
+    &_members{
+        background-color: $main-gray;
+        display: flex;
+        justify-content: space-between;
+        padding: 45px 45px 0;
+        margin-top: 50px;
+        position: relative;
+        &--advisors{
+            padding-top: 64px;
+        }
+        &_header{
+            position: absolute;
+            top: -50px;
+            left: 45px;
+        }
+    }
+    &_member{
+        display: flex;
+        align-items: flex-start;
+        width: 41.5%;
+        &--small{
+            width: auto;
+            .team_member{
+                &_photo{
+                    width: 50px;
+                }
+                &_info{
+                    padding-left: 12px;
+                }
+            }
+        }
+        &_photo{
+            width: 85px;
+            border-bottom: 6px solid $secondary-color;
+            margin-bottom: -6px;
+        }
+        &_info{
+            padding-left: 20px;
+        }
+        &_name{
+            margin-bottom: 5px;
+        }
+        &_company{
+            font-size: 13px;
+            &::before{
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                width: 47px;
+                border-bottom: 2px solid $dark-gray;
+                margin-right: 4px;
+                flex: 0 0 auto;
+            }
+            span{
+                display: block;
+                flex: 0 0 auto;
+                color: rgba($dark-gray, .5);
+                margin-left: 51px;
+            }
+        }
+    }
+    &_numbers{
+        margin-top: 126px;
+        margin-bottom: 180px;
+        padding: 0 45px;
+        &_row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            + .team_numbers_row{
+                margin-top: 60px;
+            }
+        }
+    }
+    &_num{
+        width: 165px;
+        height: 84px;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding-left: 15px;
+        padding-bottom: 5px;
+        &_bg{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        &_info{
+            font-size: 18px;
+            white-space: nowrap;
+            .stat{
+                margin: 0;
+                font-size: 58px;
+                color: $white;
+                float: left;
+                margin-right: 4px;
+            }
+            small{
+                display: block;
+                font-size: 12px;
+                line-height: 1.17;
+                color: $dark-gray;
+            }
+        }
+    }
+}

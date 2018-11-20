@@ -1,0 +1,16 @@
+.reviews{
+    &_items{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &_item{
+        width: calc(50% - 17.5px);
+        padding: 30px 45px 22px;
+        background-color: $main-gray;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,32 @@
+%dots{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 246px;
+    background: url('data:image/svg+xml;utf8,<svg width="36" height="34" viewBox="0 0 36 34" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle  fill="#FBDA5A" cx="4" cy="4" r="3.5"></circle></svg>');
+    z-index: -1; 
+}
+
+.subscribe{
+    position: relative;
+    padding-bottom: 92px;
+    margin-bottom: 200px;
+    &::after{
+        @extend %dots;
+        right: 0;
+        width: calc(50% - 12px);
+    }
+    &_form{
+        display: flex;
+        max-width: 705px;
+        input{
+            height: auto;
+            border-color: $primary-color;
+            box-shadow: none;
+            &:focus{
+                box-shadow: none;
+                border-color: $primary-dark;
+            }
+        }
+    }
+}

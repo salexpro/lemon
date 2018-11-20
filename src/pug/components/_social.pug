@@ -1,0 +1,21 @@
+mixin social(mod)
+    -
+        const social = [
+            {
+                icon: 'behance',
+                link: '#'
+            },
+            {
+                icon: 'dribble',
+                link: '#'
+            },
+            {
+                icon: 'vimeo',
+                link: '#'
+            }
+        ]
+    ul.no-bullet.social
+        each item in social
+            li
+                a(href=`./${item.link}`)
+                    +icon(item.icon, [29, 30], '#414141')

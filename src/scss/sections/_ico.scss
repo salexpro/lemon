@@ -1,0 +1,17 @@
+.ico{
+    position: relative;
+    margin-bottom: 200px;
+    &::before{
+        @extend %dots;
+        left: 0;
+        width: calc(50% - (965px / 2) - 46px);
+    }
+    &::after{
+        @extend %dots;
+        right: 0;
+        width: calc(50% - 12px);
+    }
+    .stat{
+        margin-bottom: 28px;
+    }
+}

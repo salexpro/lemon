@@ -1,0 +1,13 @@
+section#guide.subscribe(data-magellan-target="guide")
+    .grid-container
+        h2.stat
+            | Get our 
+            img(src="./assets/img/words/great.png" srcset="./assets/img/words/great.png 1x, ./assets/img/words/great@2x.png 2x" alt="great")
+            br
+            | process guide
+        form.subscribe_form
+            input(type="email" name="email" placeholder="Email" required)
+            button.button
+                | Send
+                span.button_icon
+                    +icon('arrow', [24, 14], '#454545')
