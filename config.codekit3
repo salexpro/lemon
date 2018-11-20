@@ -249,7 +249,7 @@
 		"oAP": "/build/assets/img/achievements/behance_mo.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -260,7 +260,7 @@
 		"oAP": "/build/assets/img/achievements/behance_mo@2x.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -271,7 +271,7 @@
 		"oAP": "/build/assets/img/achievements/clutch.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -282,7 +282,7 @@
 		"oAP": "/build/assets/img/achievements/clutch@2x.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -313,7 +313,7 @@
 		"oAP": "/build/assets/img/clients/adidas.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -324,7 +324,7 @@
 		"oAP": "/build/assets/img/clients/adidas@2x.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -335,7 +335,7 @@
 		"oAP": "/build/assets/img/clients/minter_one.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -346,7 +346,7 @@
 		"oAP": "/build/assets/img/clients/minter_one@2x.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -357,7 +357,7 @@
 		"oAP": "/build/assets/img/clients/play2live.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -368,7 +368,7 @@
 		"oAP": "/build/assets/img/clients/play2live@2x.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -379,7 +379,7 @@
 		"oAP": "/build/assets/img/words/differently.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -390,7 +390,7 @@
 		"oAP": "/build/assets/img/words/differently@2x.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -967,7 +967,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-doge",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 548730532
+	"lastBuiltDate": 564371610.35736096
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
