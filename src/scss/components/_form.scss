@@ -1,6 +1,11 @@
 .form{
-    margin-top: 200px;
     position: relative;
+    margin-top: 200px;
+    padding: 0 60px;
+    @include breakpoint(small down){
+        margin-top: 150px;
+        padding: 0 30px;
+    }
     &::after{
         content: '';
         position: absolute;
@@ -9,11 +14,27 @@
         width: calc(50% - (965px / 2) + 60px);
         height: 145px;
         background: url('data:image/svg+xml;utf8,<svg width="21" height="20" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle  fill="#FBDA5A" cx="2" cy="2" r="2"></circle></svg>');
+        @include breakpoint(large down){
+            width: 135px;
+        }
+        @include breakpoint(medium down){
+            width: 105px;
+            height: 310px;
+        }
+        @include breakpoint(small down){
+            display: none;
+        }
     }
     &_block{
         background-color: $main-gray;
         position: relative;
         padding: 80px 100px 100px;
+        @include breakpoint(medium down){
+            padding: 80px 70px 100px;
+        }
+        @include breakpoint(small down){
+            padding: 40px 24px;
+        }
         &::before{
             content: '';
             position: absolute;
@@ -21,23 +42,41 @@
             left: 0;
             width: 100px;
             border-bottom: 10px solid $secondary-color;
+            @include breakpoint(small down){
+                width: 24px;
+            }
         }
         &_container{
             margin-top: 80px;
+            @include breakpoint(small down){
+                margin-top: 60px;
+            }
         }
         &_row{
             display: flex;
+            @include breakpoint(medium down){
+                flex-direction: column;
+            }
         }
         &_bottom{
             text-align: right;
             margin-top: 40px;
+            @include breakpoint(small down){
+                margin-top: 35px;
+            }
         }
     }
     &_input{
         width: 100%;
         margin-bottom: 30px;
+        @include breakpoint(small down){
+            margin-bottom: 15px;
+        }
         + .form_input{
             margin-left: 25px;
+            @include breakpoint(medium down){
+                margin-left: 0;
+            }
         }
         textarea{
             min-width: 100%;

@@ -1,10 +1,21 @@
+/* global throttle */
 // @codekit-prepend quiet '../../../node_modules/lodash.throttle/index.js';
 
 const works_carousel = $('.works_carousel').slick({
     slidesToShow: 1.7,
+    variableWidth: true,
+    slidesToScroll: 1,
     arrows: false,
     infinite: false,
-    speed: 1000
+    speed: 1000,
+    responsive: [
+        {
+            breakpoint: 1025,
+            settings: {
+                speed: 300
+            }
+        }
+    ]
 });
 works_carousel.on('wheel', (e => {
     if (e.originalEvent.deltaX !== 0)

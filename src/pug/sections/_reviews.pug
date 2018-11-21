@@ -1,14 +1,15 @@
 mixin review(quote)
-    .reviews_item
+    .cell.reviews_item
         blockquote
             | Passion and skill for developing high quality digital experiences, we are now able to educate and excite our target market succinctly via our sophisticated, elegant and bold web platform - ultimately converting higher volumes of quality leads.
         +member('Andrew Surname', 'Position', 'Company', 'small')
         
-section.grid-container.reviews
-    h2
-        | Our clients
-        br
-        strong(data-line=Array(14).join('.')) about our work.
-    .reviews_items
-        each _ in Array(2)
-            +review
+section.reviews
+    .grid-container
+        h2
+            | Our clients
+            br
+            strong(data-line=Array(14).join('.')) about our work.
+        .grid-x.grid-margin-x.large-up-2.reviews_items
+            each _ in Array(2)
+                +review

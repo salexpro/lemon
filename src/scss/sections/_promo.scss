@@ -4,6 +4,10 @@
     min-height: 500px;
     display: flex;
     align-items: center;
+    padding: 0 60px;
+    @include breakpoint(small down){
+        padding: 0 30px;
+    }
     &_inner{
         width: 100%;
     }
@@ -12,11 +16,38 @@
         top: 45px;
         left: 20px;
         width: 112px;
+        transform: translateY(0);
+        transition: 400ms;
+        &.is_hidden{
+            @include breakpoint(small down){
+                transform: translateY(-42px);
+            }
+        }
+        img{
+            display: block;
+        }
+        @include breakpoint(small down){
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            width: 66px;
+            z-index: 3;
+        }
+    }
+    &_header{
+        @include breakpoint(small down){
+            max-width: 66vw;
+            font-size: 6.9vw;
+            img{
+                width: 34vw;
+                margin-bottom: -2px;
+            }
+        }
     }
     &_arrow{
         position: absolute;
         left: 15px;
-        bottom: 15px;
+        bottom: 45px;
         transform: rotate(90deg);
         width: 45px;
         height: 45px;
@@ -24,8 +55,29 @@
         align-items: center;
         justify-content: center;
         transition: 400ms;
+        @include breakpoint(large down){
+            width: 60px;
+            height: 60px;
+            left: 43px;
+            bottom: 35px;
+        }
+        @include breakpoint(small down){
+            width: 34px;
+            height: 34px;
+            left: 5px;
+        }
         &:hover{
             background-color: $primary-color;
+        }
+        svg{
+            @include breakpoint(large down){
+                width: 31px;
+                height: 17px;
+            }
+            @include breakpoint(small down){
+                width: 18px;
+                height: 11px;
+            }
         }
     }
 }

@@ -23,20 +23,21 @@ mixin project(header, descr, mod)
                     | crypto
 
 
-section#about.projects.grid-container(data-magellan-target="about")
-    h2
-        | The way we challenging the status quo is
-        br
-        | by making our videos 
-        strong(data-line=Array(18).join('.')) beautifully designed,
-        br
-        | unique, easy to understand. 
-        br
-        | Just hapenned we make 
-        small animation
-        | 
-        | videos!    
-    .grid-x.grid-margin-x.projects_items
-        +project('BRD <br>animation video', 'An ecosystem for cryptocurrency payments. Minimalistic video that consists of circles, lines, lights and shades.', 'main')
-        +project('Jolyy explainer', 'An ecosystem for cryptocurrency payments. Minimalistic video that consists of circles, lines, lights and shades.')
-        +project('SoapBox', 'An ecosystem for cryptocurrency payments. Minimalistic video that consists of circles, lines, lights and shades.')
+section#about.projects(data-magellan-target="about")
+    .grid-container
+        h2
+            | The way we challenging the status quo is
+            br
+            | by making our videos 
+            strong(data-line=Array(18).join('.')) beautifully designed,
+            br
+            | unique, easy to understand. 
+            br
+            | Just hapenned we make 
+            small animation
+            | 
+            | videos!    
+        .grid-x.grid-margin-x.projects_items
+            +project('BRD <br>animation video', 'An ecosystem for cryptocurrency payments. Minimalistic video that consists of circles, lines, lights and shades.', 'main')
+            +project('Jolyy explainer', 'An ecosystem for cryptocurrency payments. Minimalistic video that consists of circles, lines, lights and shades.')
+            +project('SoapBox', 'An ecosystem for cryptocurrency payments. Minimalistic video that consists of circles, lines, lights and shades.')

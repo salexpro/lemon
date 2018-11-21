@@ -11,6 +11,20 @@
     justify-content: center;
     min-height: 500px;
     background-color: $body-background;
+    transform: translateY(0);
+    transition: 400ms;
+    @include breakpoint(small down){
+        min-height: 42px;
+        height: 42px;
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid #cfcfcf;
+    }
+    &.is_hidden{
+        @include breakpoint(small down){
+            transform: translateY(-42px);
+        }
+    }
     &_hamb{
         -webkit-tap-highlight-color: transparent;
         user-select: none;
@@ -19,6 +33,18 @@
         top: 23px;
         right: 0;
         z-index: 14;
+        transform: translateY(0);
+        transition: 400ms;
+        @include breakpoint(small down){
+            top: 0;
+            width: 42px;
+            right: 3px;
+        }
+        &.is_hidden:not(.is_active){
+            @include breakpoint(small down){
+                transform: translateY(-42px);
+            }
+        }
         &.is_active{
             .nav_hamb{
                 &_icon{
@@ -57,6 +83,7 @@
         opacity: 0;
         transition: 700ms transform, 300ms opacity;
         display: flex;
+        flex-direction: column;
         padding: 20px 0;
         &.is-open{
             opacity: 1;

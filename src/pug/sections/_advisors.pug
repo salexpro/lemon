@@ -1,8 +1,9 @@
-section.grid-container.advisors
-    .team_members.team_members--advisors
-        h2.team_members_header
-            | Our beloved
-            br
-            | advisors.
-        each _ in Array(2)
-            +member('Andrew Surname', 'Position', 'Company')
+section.advisors
+    .grid-container
+        .team_members.team_members--advisors
+            h2.team_members_header
+                | Our beloved
+                br
+                | advisors.
+            each _ in Array(2)
+                +member('Andrew Surname', 'Position', 'Company')

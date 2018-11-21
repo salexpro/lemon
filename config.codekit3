@@ -44,6 +44,13 @@
 		"oAP": "/build/build",
 		"oF": 0
 		},
+	"/build.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/build.zip",
+		"oF": 0
+		},
 	"/docs": {
 		"ft": 65536,
 		"oA": 1,
@@ -813,6 +820,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/src/scss/sections/_advisors.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_advisors.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/src/scss/sections/_clients.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -967,7 +987,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-doge",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 564371610.35736096
+	"lastBuiltDate": 564468130.06496704
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

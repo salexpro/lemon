@@ -1,7 +1,29 @@
 .social{
     margin: 0;
-    li{
-        margin: 14px 0;
+    &--nav{
+        li{
+            margin: 14px 0;
+        }
+        @include breakpoint(small down){
+            display: none;
+        }
+    }
+    &--mobile.no-bullet{
+        display: none;
+        margin-left: 27px;
+        margin-bottom: 14px;
+        margin-top: 20px;
+        flex: 0 0 auto; 
+        @include breakpoint(small down){
+            display: flex;
+        }
+        li{
+            margin: 0 8px;
+        }
+        svg{
+            width: 25px;
+            height: 25px;
+        }
     }
     use{
         transition: 400ms;

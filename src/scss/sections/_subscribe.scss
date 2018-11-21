@@ -5,27 +5,57 @@
     height: 246px;
     background: url('data:image/svg+xml;utf8,<svg width="36" height="34" viewBox="0 0 36 34" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle  fill="#FBDA5A" cx="4" cy="4" r="3.5"></circle></svg>');
     z-index: -1; 
+    @include breakpoint(small down){
+        background: url('data:image/svg+xml;utf8,<svg width="22" height="20" viewBox="0 0 22 20" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle  fill="#FBDA5A" cx="2" cy="2" r="2"></circle></svg>');
+        height: 146px;
+        width: 100%;
+    }
 }
 
 .subscribe{
     position: relative;
-    padding-bottom: 92px;
+    padding: 0 60px 92px;
     margin-bottom: 200px;
+    @include breakpoint(small down){
+        padding: 0 30px 47px;
+        margin-bottom: 144px;
+    }
     &::after{
         @extend %dots;
         right: 0;
         width: calc(50% - 12px);
+        @include breakpoint(large down){
+            width: calc(100% - 705px - 75px + 211px);
+        }
+        @include breakpoint(small down){
+            width: 100%;
+        }
     }
     &_form{
         display: flex;
         max-width: 705px;
+        @include breakpoint(small down){
+            flex-direction: column;
+            max-width: 315px;
+        }
         input{
-            height: auto;
+            height: 65px;
+            padding: 0 20px;
+            line-height: 61px;
             border-color: $primary-color;
             box-shadow: none;
+            @include breakpoint(small down){
+                line-height: normal;
+                height: 48px;
+            }
             &:focus{
                 box-shadow: none;
                 border-color: $primary-dark;
+            }
+        }
+        @include breakpoint(medium down){
+            .button{
+                min-width: 160px;
             }
         }
     }

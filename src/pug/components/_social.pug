@@ -14,7 +14,7 @@ mixin social(mod)
                 link: '#'
             }
         ]
-    ul.no-bullet.social
+    ul.no-bullet.social(class=mod ? 'social--' + mod : false)
         each item in social
             li
                 a(href=`./${item.link}`)

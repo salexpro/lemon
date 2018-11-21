@@ -1,17 +1,43 @@
 .ico{
     position: relative;
     margin-bottom: 200px;
+    padding: 0 60px;
+    @include breakpoint(small down){
+        margin-bottom: 150px;
+        padding: 0 30px;
+    }
     &::before{
         @extend %dots;
         left: 0;
         width: calc(50% - (965px / 2) - 46px);
+        background-position: top right -28px;
+        @include breakpoint(large down){
+            width: 29px;
+        }
+        @include breakpoint(small down){
+            display: none;
+        }
     }
     &::after{
         @extend %dots;
         right: 0;
         width: calc(50% - 12px);
+        @include breakpoint(large down){
+            width: calc(100% - 450px - 75px - 45px);
+        }
+        @include breakpoint(small down){
+            width: 100%;;
+        }
     }
     .stat{
         margin-bottom: 28px;
+        @include breakpoint(small down){
+            background: $body-background;
+            margin: 0;
+            margin-right: 26px;
+            padding: 6px 0 15px;
+            letter-spacing: -0.13px;
+            max-width: 315px;
+        }
     }
 }

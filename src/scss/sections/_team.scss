@@ -1,4 +1,8 @@
 .team{
+    padding: 0 60px;
+    @include breakpoint(small down){
+        padding: 0 30px;
+    }
     &_members{
         background-color: $main-gray;
         display: flex;
@@ -6,27 +10,67 @@
         padding: 45px 45px 0;
         margin-top: 50px;
         position: relative;
+        @include breakpoint(large down){
+            padding-right: 0;
+        }
+        @include breakpoint(medium down){
+            flex-direction: column;
+            padding: 45px 45px 0;
+        }
+        @include breakpoint(small down){
+            margin-top: 35px;
+            padding: 0 20px 33px;
+        }
         &--advisors{
             padding-top: 64px;
+            padding-left: 50px;
+            @include breakpoint(small down){
+                padding-left: 20px;
+                padding-top: 61px;
+            }
         }
         &_header{
             position: absolute;
             top: -50px;
             left: 45px;
+            @include breakpoint(small down){
+                top: -18px;
+                left: 20px;
+                line-height: 1.06;
+            }
         }
     }
     &_member{
         display: flex;
         align-items: flex-start;
-        width: 41.5%;
+        // width: 41.5%;
+        width: 363px;
+        @include breakpoint(small down){
+            width: auto;
+            flex-direction: column;
+        }
+        + .team_member{
+            @include breakpoint(medium down){
+                margin-top: 56px;
+            }
+            @include breakpoint(small down){
+                margin-top: 37px;
+            }
+        }
         &--small{
             width: auto;
             .team_member{
                 &_photo{
                     width: 50px;
+                    @include breakpoint(small down){
+                        width: 44px;
+                    }
                 }
                 &_info{
                     padding-left: 12px;
+                    @include breakpoint(small down){
+                        padding: 0;
+                    }
                 }
             }
         }
@@ -34,9 +78,18 @@
             width: 85px;
             border-bottom: 6px solid $secondary-color;
             margin-bottom: -6px;
+            @include breakpoint(small down){
+                margin-bottom: 10px;
+                margin-top: -5px;
+                width: 44px;
+                border-bottom-width: 4px;
+            }
         }
         &_info{
             padding-left: 20px;
+            @include breakpoint(small down){
+                padding: 0;
+            }
         }
         &_name{
             margin-bottom: 5px;
@@ -62,25 +115,46 @@
     }
     &_numbers{
         margin-top: 126px;
-        margin-bottom: 180px;
+        margin-bottom: 120px;
         padding: 0 45px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include breakpoint(medium down){
+            margin: 95px 0 120px;
+        }
+        @include breakpoint(small down){
+            margin: 80px 0 46px;
+            padding: 0 33px;
+        }
         &_row{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
             + .team_numbers_row{
                 margin-top: 60px;
             }
         }
     }
     &_num{
-        width: 165px;
+        width: 33.33%;
         height: 84px;
         position: relative;
         display: flex;
         align-items: flex-end;
         padding-left: 15px;
         padding-bottom: 5px;
+        margin-bottom: 60px;
+        @include breakpoint(medium down){
+            width: 178px;
+        }
+        @include breakpoint(small down){
+            width: 100%;
+            &:nth-child(3),
+            &:nth-last-child(-n+2){
+                display: none;
+            }
+            &:nth-child(2){
+                order: 1;
+            }
+        }
         &_bg{
             position: absolute;
             top: 0;
@@ -88,7 +162,7 @@
             z-index: -1;
         }
         &_info{
-            font-size: 18px;
+            font-size: 1rem;
             white-space: nowrap;
             .stat{
                 margin: 0;

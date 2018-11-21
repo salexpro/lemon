@@ -1,5 +1,10 @@
 .clients{
     margin: 200px 0;
+    padding: 0 60px;
+    @include breakpoint(small down){
+        margin: 150px 0;
+        padding: 0 30px;
+    }
     &_items{
         margin-top: 30px;
         display: flex;
@@ -7,10 +12,28 @@
         justify-content: space-between;
     }
     &_item{
+        max-width: 265px;
         width: calc(33.33% - 56px);
         height: 125px;
         display: flex;
         align-items: center;
         justify-content: center;
+        @include breakpoint(large down){
+            width: 33.33%;
+        }
+        @include breakpoint(medium down){
+            width: 50%;
+            max-width: none;
+            &:nth-child(3n){
+                display: none;
+            }
+        }
+        @include breakpoint(small down){
+            height: 111px;
+            width: 100%;
+            &:nth-child(2n){
+                display: none;
+            }
+        }
     }
 }

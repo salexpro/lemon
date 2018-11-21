@@ -1,6 +1,7 @@
 button {
     outline: none;
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba($primary-color, 0.5);
 }
 
 .button{
@@ -9,10 +10,30 @@ button {
     align-items: center;
     justify-content: space-between;
     min-width: 306px;
+    @include breakpoint(small down){
+        font-size: 1rem;
+        width: 100%;
+        min-width: auto;
+        svg{
+            width: 19px;
+            height: 11px;
+        }
+    }
     &.large{
         min-width: 410px;
+        @include breakpoint(small down){
+            min-width: auto;
+            font-size: 1rem;
+        }
     }
     &.larger{
         min-width: 450px;
+        @include breakpoint(small down){
+            min-width: auto;
+            max-width: 315px;
+            margin-right: 26px;
+            width: auto;
+            display: flex;
+        }
     }
 }

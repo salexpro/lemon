@@ -2,18 +2,19 @@ mixin achievement(img, name)
     .achievements_item
         img(src=`./assets/img/achievements/${img}.png` srcset=`./assets/img/achievements/${img}.png 1x, ./assets/img/achievements/${img}@2x.png 2x` alt=name)
 
-section.grid-container.achievements
-    .achievements_content
-        h2.h3.achievements_header
-            | Our
-            br
-            | achievements
-        +achievement('behance_mo', 'Behance Mo')
-        +achievement('behance_ae', 'Behance Ae')
-        +achievement('clutch', 'Clutch')
+section.achievements
+    .grid-container
+        .achievements_content
+            h2.h3.achievements_header
+                | Our
+                br
+                | achievements
+            +achievement('behance_mo', 'Behance Mo')
+            +achievement('behance_ae', 'Behance Ae')
+            +achievement('clutch', 'Clutch')
 
-    .achievements_bottom
-        a.button.large(href="#" target="_blank")
-            | Go to Vimeo Profile
-            span.icon
-                +icon('arrow', [24, 14], '#454545')
+        .achievements_bottom
+            a.button.large(href="#" target="_blank")
+                | Go to Vimeo Profile
+                span.icon
+                    +icon('arrow', [24, 14], '#454545')

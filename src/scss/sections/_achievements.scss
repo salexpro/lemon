@@ -1,17 +1,47 @@
 .achievements{
+    padding: 0 60px;
+    @include breakpoint(small down){
+        padding: 0 30px;
+    }
     &_header{
         line-height: 1.09;
         position: absolute;
         left: 45px;
         top: -26px;
+        @include breakpoint(small down){
+            left: 20px;
+            font-size: 22px;
+        }
     }
     &_content{
         background-color: $main-gray;
         position: relative;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
         padding: 70px 45px 50px;
+        @include breakpoint(medium down){
+            padding-bottom: 0;
+        }
+        @include breakpoint(small down){
+            padding: 70px 20px 10px;
+            flex-direction: column;
+        }
+    }
+    &_item{
+        + .achievements_item{
+            margin-left: 33px;
+            @include breakpoint(small down){
+                margin-left: 0;
+            }
+        }
+        @include breakpoint(medium down){
+            margin-bottom: 44px;
+        }
+        @include breakpoint(small down){
+            margin-bottom: 40px;
+        }
     }
     &_bottom{
         text-align: right;
