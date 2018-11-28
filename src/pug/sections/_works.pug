@@ -2,12 +2,13 @@
 
 mixin work(header, description, labels)
     .works_item(data-labels=labels.join(' '))
-        .works_item_img
+        a.works_item_img(href="./project.html")
             img(src="//picsum.photos/1120/630/?random&" + Math.random(), alt=header)
         .works_item_content
             .works_item_content_top
                 h3.works_item_header
-                    =header
+                    a.works_item_header-link(href="./project.html")
+                        =header
                 .works_item_labels
                     each label in labels
                         span.label.small

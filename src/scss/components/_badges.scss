@@ -1,0 +1,12 @@
+.badges{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: flex;
+    &--project{
+        right: 0;
+    }
+}
+.badge + .badge{
+    margin-left: 10px;
+}

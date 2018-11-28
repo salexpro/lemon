@@ -1,0 +1,54 @@
+.project{
+    padding-top: 170px;
+    &_video{
+        position: relative;
+        padding: 56.25% 0 0 0;
+        margin-bottom: 46px;
+    }
+    &_content{
+        position: relative;
+    }
+    &_info{
+        margin-top: 40px;
+        margin-bottom: 30px;
+        color: rgba($dark-gray, .5);
+        display: flex;
+        // align-items: center;
+        &_top{
+            font-size: 22px;
+            margin-bottom: 15px;
+            strong{
+                color: $dark-gray;
+                margin-right: 20px;
+            }
+        }
+        &_text{
+            margin: 0;
+            line-height: 1.11;
+        }
+        &_logo{
+            flex: 1 0 265px;
+            margin-left: 30px;
+            height: 125px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &_link{
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        line-height: 1.4;
+        color: $dark-gray;
+        svg{
+            margin-left: 20px;
+        }
+    }
+    &_images{
+        margin-top: 160px;
+        &_item{
+            margin-top: 30px;
+        }
+    }
+}

@@ -1,9 +1,11 @@
 extends ../_layout
+block const
+    - const page = 'main'
 block content
     include ../sections/_promo
     include ../sections/_projects
     include ../sections/_achievements
-    +form(`Book a call <br>to discuss your <strong data-line=${Array(9).join('.')}>project.</strong>`, 'call')
+    +form(`Book a call <br>to discuss your <strong data-line=${Array(9).join('.')}>project.</strong>`, 'Konstantine', 'When we can help you')
     include ../sections/_clients
     include ../sections/_subscribe
     include ../sections/_works
@@ -12,4 +14,4 @@ block content
     include ../sections/_advisors
     include ../sections/_experience
     include ../sections/_reviews
-    +form(`Let's keep <br><strong data-line=${Array(9).join('.')}>in touch</strong>`)
+    +form(`Let's keep <br><strong data-line=${Array(9).join('.')}>in touch</strong>`, 'Konstantine', 'Write us a line', 'contacts')

@@ -68,6 +68,9 @@
             @include breakpoint(medium down){
                 margin: 0;
             }
+            &-link{
+                color: $dark-gray; 
+            }
         }
         &_descr{
             font-size: 13px;

@@ -61,11 +61,13 @@
 @import 'components/button';
 @import 'components/social';
 @import 'components/menu';
+@import 'components/badges';
 @import '../../node_modules/slick-carousel/slick/slick.scss';
 
 // Sections
 @import 'sections/nav';
 @import 'sections/promo';
+@import 'sections/project';
 @import 'sections/projects';
 @import 'sections/achievements';
 @import 'components/form';
