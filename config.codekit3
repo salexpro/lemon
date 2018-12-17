@@ -580,16 +580,6 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"/src/js/plugins/_GSDevTools.min.js": {
-		"ft": 64,
-		"ma": 1,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/build/js/plugins/_GSDevTools.min.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 1
-		},
 	"/src/pug/_layout.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -1169,7 +1159,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-doge",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 566781208.37815297
+	"lastBuiltDate": 566782295.25495696
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

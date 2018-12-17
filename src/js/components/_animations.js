@@ -60,12 +60,12 @@ const anim_done = id => {
     
     setTimeout(() => {
         tl
-            .to(`form[data-id=${id}] .help-text`, 0.5, { opacity: 0, y: -10 })
-            .fromTo(icon_check, 0.3, {y: top_check}, {y: top_check_arr}, '-=0.5')
-            .fromTo(`${icon_check} path`, 2, { drawSVG: '0% 43%',  opacity: 1 }, { drawSVG: '100% 100%' }, '-=0.3')
+            .fromTo(icon_check, 0.3, {y: top_check}, {y: top_check_arr})
+            .fromTo(`${icon_check} path`, 2, { drawSVG: '0% 43%', opacity: 1 }, { drawSVG: '100% 100%' }, '-=0.3')
+            .to(`form[data-id=${id}] .help-text`, 0.5, { opacity: 0, y: -10 }, '-=2')
             .to(`${icon_check} path`, 0.5, { opacity: '0' }, '-=1.4')
-            .set(`${icon_arrow} path`, {opacity: 1}, '-=1.6')
-            .fromTo(`${icon_arrow} path`, 2, { drawSVG: '0% 0%' }, { drawSVG: '0% 100%' }, '-=1.6')
+            .set(`${icon_arrow} path`, {opacity: 1}, '-=1.5')
+            .fromTo(`${icon_arrow} path`, 2, { drawSVG: '0% 0%' }, { drawSVG: '0% 100%' }, '-=1.5')
     
         $(`form[data-id=${id}] [type="submit"]`).prop('disabled', false)
     }, 5000);
