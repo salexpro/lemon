@@ -30,7 +30,7 @@ mixin menu(mod)
                 link: '#contacts'
             }
         ]
-    ul.menu(class=mod data-magellan data-animation-duration="1000" data-animation-easing="swing" data-deep-linking='true')
+    ul.menu(class=mod data-magellan data-animation-duration="1000" data-animation-easing="swing")
         each item in menu
             li
                 a(href=((page == 'project') ? './' : '') + item.link)

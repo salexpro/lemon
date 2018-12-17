@@ -1,18 +1,27 @@
-mixin form(header, name, place_message, mod)
+mixin form(header, place_message, mod)
+    - const rnd = mod ? 1 : 0;
     section.form(data-magellan-target=mod?mod:false id=mod?mod:false)
         .grid-container
             .form_block
                 h2!=header
-                form.form_block_container(action="")
+                form.form_block_container(data-abide novalidate data-id=rnd)
                     .form_block_row
                         .form_input
-                            input(type="text" name="name" value=name placeholder="Name" required)
+                            input(type="text" name=`name${rnd}` placeholder="Name" aria-errormessage=`name_error${rnd}` required)
+                            span#name_error.form-error
+                                | Name is required field
                         .form_input
-                            input(type="email" name="email" placeholder="Email" required)
+                            input(type="email" name=`email${rnd}` placeholder="Email" aria-errormessage=`email_error${rnd}` required)
+                            span#email_error.form-error
+                                | Enter the correct email
                     .form_input
-                        textarea(name="message" placeholder=place_message required=mod?true:false)
+                        textarea(name=`message${rnd}` placeholder=place_message aria-errormessage=`message_error${rnd}` required=mod?true:false)
+                        span#message_error.form-error
+                            | Message is required field
                     .form_block_bottom    
-                        button.button
+                        button.button(type="submit")
                             | Send
-                            span.button_icon
-                                +icon('arrow', [24, 14], '#454545')
+                            include _button_icon
+
+                        .help-text
+                            | We’ve got your message and will answer soon

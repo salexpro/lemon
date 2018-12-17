@@ -5,9 +5,8 @@ section#guide.subscribe(data-magellan-target="guide")
             img(src="./assets/img/words/great.png" srcset="./assets/img/words/great.png 1x, ./assets/img/words/great@2x.png 2x" alt="great")
             br
             | process guide
-        form.subscribe_form
+        form.subscribe_form(data-abide novalidate data-id="2")
             input(type="text" name="email" placeholder="Email" required)
-            button.button
+            button.button(type="submit")
                 | Send
-                span.button_icon
-                    +icon('arrow', [24, 14], '#454545')
+                include ../components/_button_icon

@@ -82,4 +82,32 @@
             min-width: 100%;
         }
     }
+    &-error{
+        margin-top: 6px;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: 300ms;
+        display: block;
+        height: 0;
+        @include breakpoint(small down){
+            font-size: 12px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        &.is-visible{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+.help-text{
+    margin-top: 6px;
+    font-style: normal;
+    opacity: 0;
+    transform: translateY(-10px);
+    color: $medium-gray;
+    @include breakpoint(small down){
+        font-size: 12px;
+    }
 }

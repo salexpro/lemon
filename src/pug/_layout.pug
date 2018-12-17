@@ -26,6 +26,7 @@ html(lang="en")
         include components/_offcanvas
         block js
             script.
-                var module = {}
+                var require = function(){};
+                var module = {};
             script(src="./js/app.min.js")
         include components/_icons

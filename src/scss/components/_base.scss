@@ -90,4 +90,7 @@ blockquote{
             padding: 0 20px;
         }
     }
+    &::placeholder{
+        transition: 500ms;
+    }
 }

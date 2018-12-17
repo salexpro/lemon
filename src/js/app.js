@@ -9,9 +9,12 @@
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.offcanvas.min.js';
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.smoothScroll.min.js';
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.magellan.min.js';
+@codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.abide.min.js';
 @codekit-prepend quiet '../../node_modules/slick-carousel/slick/slick.min.js';
 
 @codekit-append quiet 'components/_carousel.js';
+@codekit-append quiet 'components/_animations.js';
+@codekit-append quiet 'components/_forms.js';
 */
 
 $(document).foundation();
@@ -54,4 +57,4 @@ $(window).scroll(() => {
 
 $('.menu a').click(() => {
     if (Foundation.MediaQuery.is('small only')) $('#menu').foundation('close');
-})
+});
