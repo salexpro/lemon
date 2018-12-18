@@ -25,12 +25,14 @@ section#works.works(data-magellan-target="works")
             small works
             | .
         .works_items
-            ul.menu.vertical.menu--cats(data-tabs)
-                each category in categories
-                    li.works_label
-                        a(href=`#${category}`) 
+            ul#works_tabs.menu.vertical.menu--cats.tabs(data-tabs)
+                each category, i in categories
+                    li.works_label.tabs-title(class=(i==0)?'is-active':false)
+                        a(href=`#work_tab_${category}` data-tabs-target=`work_tab_${category}` aria-selected=(i==0)?'true':false) 
                             =category.charAt(0).toUpperCase() + category.slice(1)
 
-            .works_carousel
-                each _ in Array(10)
-                    +work('BRD animation video', 'An ecosystem for cryptocurrency payments. Minimalistic video that consists of circles, lines, lights and shades.', categories.sort(()=>.5-Math.random()).slice(0,2))
+            .works_content(data-tabs-content="works_tabs")
+                each category, i in categories
+                    .works_carousel(id=`work_tab_${category}` class=(i==0)?'is-active':false)
+                        each _ in Array(10)
+                            +work('BRD animation video', 'An ecosystem for cryptocurrency payments. Minimalistic video that consists of circles, lines, lights and shades.', [...categories].sort(()=>.5-Math.random()).slice(0,2))

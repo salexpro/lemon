@@ -38,18 +38,12 @@
 		"oAP": "/build/.gitignore",
 		"oF": 1
 		},
-	"/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/build",
-		"oF": 0
-		},
 	"/build.zip": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "/build/build.zip",
-		"oF": 0
+		"oF": 1
 		},
 	"/docs": {
 		"ft": 65536,
@@ -109,6 +103,16 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.smoothScroll.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.tabs.min.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.tabs.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -1159,7 +1163,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-doge",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 566782295.25495696
+	"lastBuiltDate": 566832130.40325296
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

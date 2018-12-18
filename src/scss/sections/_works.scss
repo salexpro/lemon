@@ -15,6 +15,12 @@
                 margin-left: 20px;
             }
         }
+        &.is-active a{
+            color: $dark-gray;
+        }
+        a{
+            outline: none;
+        }
     }
     &_items{
         display: flex;
@@ -31,6 +37,9 @@
         width: calc(50vw + (995px / 2) - 121px - 75px);
         @include breakpoint(small down){
             width: calc(100vw - 42px);
+        }
+        &:not(.is-active){
+            display: none;
         }
     }
     &_item{
@@ -77,6 +86,9 @@
             @include breakpoint(small down){
                 margin: 0;
             }
+        }
+        a{
+            outline: none;
         }
     }
 }

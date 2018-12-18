@@ -10,6 +10,7 @@
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.smoothScroll.min.js';
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.magellan.min.js';
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.abide.min.js';
+@codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.tabs.min.js';
 @codekit-prepend quiet '../../node_modules/slick-carousel/slick/slick.min.js';
 
 @codekit-append quiet 'components/_carousel.js';
