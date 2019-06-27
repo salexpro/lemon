@@ -1,3 +1,31 @@
+-
+    const advisors = [
+        {
+            photo: './assets/img/advisors/antoine.jpg',
+            name: 'Antoine Marcq', 
+            position: 'Helps us with native scripts', 
+            company: 'Founder of Resource-Education.com',
+            socials: [
+                {
+                    icon: ['linkedin', [20, 20], 'currentColor', [382, 382]],
+                    link: 'https://www.linkedin.com/in/antoine-marcq'
+                }
+            ]
+        },
+        {
+            photo: './assets/img/advisors/kereel.jpg',
+            name: 'Kereel Blumenkrants', 
+            position: 'Helps us with animation vision', 
+            company: 'Gobelins alumni. Created animation of "Love, Death and Robots".',
+            //- socials: [
+            //-     {
+            //-         icon: ['linkedin', [20, 20], 'currentColor', [382, 382]],
+            //-         link: 'https://www.linkedin.com/in/antoine-marcq'
+            //-     }
+            //- ]
+        }
+    ]
+
 section.advisors
     .grid-container
         .team_members.team_members--advisors
@@ -5,5 +33,5 @@ section.advisors
                 | Our beloved
                 br
                 | advisors.
-            each _ in Array(2)
-                +member('Andrew Surname', 'Position', 'Company')
+            each advisor in advisors
+                +member(advisor)

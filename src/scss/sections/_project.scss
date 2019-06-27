@@ -1,11 +1,9 @@
 .project{
-    padding: 170px 60px 0;
+    padding: 60px;
     @include breakpoint(small down){
-        padding: 113px 30px 0;
+        padding: 30px 20px;
     }
     &_video{
-        position: relative;
-        padding: 56.25% 0 0 0;
         margin-bottom: 46px;
         @include breakpoint(small down){
             margin-bottom: 20px;
@@ -29,6 +27,9 @@
         @include breakpoint(small down){
             margin: 25px 0 30px;
         }
+        &_content{
+            font-weight: 400;
+        }
         &_top{
             font-size: 22px;
             margin-bottom: 15px;
@@ -36,6 +37,7 @@
                 padding-right: 120px;
             }
             @include breakpoint(small down){
+                padding-right: 66px;
                 font-size: 18px;
                 line-height: 1.06;
             }
@@ -56,6 +58,15 @@
             @include breakpoint(small down){
                 font-size: 14px;
             }
+            p{
+                margin-bottom: 1em;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+            a{
+                word-break: break-all;
+            }
         }
         &_logo{
             flex: 1 0 265px;
@@ -68,11 +79,12 @@
                 position: absolute;
                 right: 0;
                 top: 0;
-                width: 112px;
-                height: 53px;
-                img{
-                    max-width: 60px;
-                }
+                width: 100%;
+                max-width: 112px;
+                height: auto;
+            }
+            @include breakpoint(small down){
+                max-width: 56px;
             }
         }
     }

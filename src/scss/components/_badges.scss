@@ -5,6 +5,26 @@
     display: flex;
     &--project{
         right: 0;
+        &.is_present + .project_info{
+            .project_info_content .project_info_top{
+                @include breakpoint(medium down){
+                    padding-right: 190px;
+                }
+                @include breakpoint(small down){
+                    padding-right: 66px;
+                }
+            }
+            .project_info_logo{
+                padding-right: 66px;
+                @include breakpoint(medium down){
+                    margin-right: 66px;
+                    padding: 0;
+                }
+                @include breakpoint(small down){
+                    margin: 50px 0 0;
+                }
+            }
+        }
     }
 }
 .badge + .badge{

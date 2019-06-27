@@ -1,4 +1,4 @@
-mixin form(header, place_message, mod)
+mixin form(header, mod)
     - const rnd = mod ? 1 : 0;
     section.form(data-magellan-target=mod?mod:false id=mod?mod:false)
         .grid-container
@@ -7,21 +7,21 @@ mixin form(header, place_message, mod)
                 form.form_block_container(data-abide novalidate data-id=rnd)
                     .form_block_row
                         .form_input
-                            input(type="text" name=`name${rnd}` placeholder="Name" aria-errormessage=`name_error${rnd}` required)
-                            span#name_error.form-error
+                            input(type="text" name=`name` placeholder="Name" aria-errormessage=`name_error${rnd}` required)
+                            span.form-error(id=`name_error${rnd}`)
                                 | Name is required field
                         .form_input
-                            input(type="email" name=`email${rnd}` placeholder="Email" aria-errormessage=`email_error${rnd}` required)
-                            span#email_error.form-error
+                            input(type="email" name=`email` placeholder="Email" aria-errormessage=`email_error${rnd}` required)
+                            span.form-error(id=`email_error${rnd}`)
                                 | Enter the correct email
                     .form_input
-                        textarea(name=`message${rnd}` placeholder=place_message aria-errormessage=`message_error${rnd}` required=mod?true:false)
-                        span#message_error.form-error
-                            | Message is required field
-                    .form_block_bottom    
+                        input(type="text" name=`phone` placeholder='Phone from+ or Skype id' aria-errormessage=`phone_error${rnd}` required)
+                        span.form-error(id=`phone_error${rnd}`)
+                            | Phone is required field
+                    .form_block_bottom
                         button.button(type="submit")
                             | Send
                             include _button_icon
-
-                        .help-text
-                            | We’ve got your message and will answer soon
+                        .help-text(id=`formMessage${rnd}`)
+                            | We've got your message and will answer soon
+                    input(type="hidden" name="formtype" value="contact")

@@ -1,6 +1,6 @@
 .projects{
     padding: 0 60px;
-    margin: 55px 0 130px;
+    margin: 55px 0 80px;
     @include breakpoint(large down){
         margin-top: 47px;
     }
@@ -15,6 +15,7 @@
         margin-top: 48px;
     }
     &_item{
+        margin-bottom: 50px;
         &:not(:last-child){
             @include breakpoint(medium down){
                 margin-bottom: 50px;
@@ -56,7 +57,7 @@
 
         &--main{
             display: flex;
-            margin-bottom: 50px;
+            // margin-bottom: 50px;
             @include breakpoint(medium down){
                 flex-direction: column-reverse;
             }
@@ -103,6 +104,24 @@
                     }
                 }
             }
+        }
+    }
+    &_popup{
+        width: calc(100% - 75px);
+        max-width: 900px;
+        transform: translateX(100%);
+        @include breakpoint(small down){
+            width: calc(100% - 42px);
+        }
+        &.is-transition-overlap{
+            z-index: 15;
+        }
+        + .js-off-canvas-overlay{
+            background: rgba($black , 0.5);
+        }
+        &.is-open ~ .nav_hamb{
+            visibility: visible;
+            opacity: 1;
         }
     }
 }

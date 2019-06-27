@@ -1,20 +1,176 @@
-- const categories = ['bank', 'blockchain', 'sport', 'apps'];
+-
+    const categories = [
+        {
+            title: 'All',
+            label: 'all'
+        },
+        {
+            title: 'Finance',
+            label: 'finance'
+        },
+        //- {
+        //-     title: 'Mobile apps',
+        //-     label: 'mobile'
+        //- },
+        {
+            title: 'Blockchain',
+            label: 'blockchain'
+        },
+        //- {
+        //-     title: 'SaaS',
+        //-     label: 'saas'
+        //- },
+        {
+            title: 'Minimalistic',
+            label: 'minimalistic'
+        },
+        {
+            title: 'Characters',
+            label: 'characters'
+        },
+        {
+            title: 'Interface',
+            label: 'interface'
+        }
+    ]
 
-mixin work(header, description, labels)
-    .works_item(data-labels=labels.join(' '))
-        a.works_item_img(href="./project.html")
-            img(src="//picsum.photos/1120/630/?random&" + Math.random(), alt=header)
+    const works = [
+        {
+            id: '302418130',
+            header: 'Instapay Explainer from Lemon Digital',
+            labels: ['characters']
+        },
+        {
+            id: '291285446',
+            header: 'Reefic Protocol video from Lemon Digital',
+            labels: ['characters', 'blockchain']
+        },
+        {
+            id: '289688517',
+            header: 'SoapBox explainer video from Lemon Digital',
+            labels: ['characters', 'blockchain']
+        },
+        {
+            id: '241302614',
+            header: 'Scorum - ICO explainer video from Lemon Digital',
+            labels: ['characters']
+        },
+        {
+            id: '286351156',
+            header: 'Circum animation video',
+            labels: ['characters', 'blockchain', 'finance']
+        },
+        {
+            id: '254682825',
+            header: 'Jolyy explainer',
+            labels: ['characters', 'blockchain']
+        },
+        {
+            id: '235137557',
+            header: 'Enjincoin from Lemon Digital',
+            labels: ['characters']
+        },
+        {
+            id: '220560693',
+            header: 'Next from Lemon Digital',
+            labels: ['characters']
+        },
+        {
+            id: '276735034',
+            header: 'Allsparkchain explainer video from Lemon Digital',
+            labels: ['minimalistic', 'interface']
+        },
+        {
+            id: '280828211',
+            header: 'BRD animated video (in collaboration with Hypercube.video)',
+            labels: ['minimalistic', 'blockchain', 'finance']
+        },
+        {
+            id: '264460335',
+            header: 'VoiceCoin ICO explainer from Lemon Digital',
+            labels: ['minimalistic', 'blockchain']
+        },
+        {
+            id: '254677616',
+            header: 'Dropdeck',
+            labels: ['minimalistic']
+        },
+        {
+            id: '228731577',
+            header: 'Root ICO from Lemon Digital (Chinese)',
+            labels: ['minimalistic']
+        },
+        {
+            id: '233835615',
+            header: 'Humaniq ICO from Lemon Digital',
+            labels: ['minimalistic']
+        },
+        {
+            id: '243336780',
+            header: 'Zeus explainer from Lemon Digital',
+            labels: ['minimalistic']
+        },
+        {
+            id: '243428614',
+            header: 'Miralab.io explainer for the presale from Lemon Digital',
+            labels: ['minimalistic']
+        },
+        {
+            id: '268011369',
+            header: 'XYO.Network explainer',
+            labels: ['blockchain']
+        },
+        {
+            id: '266180175',
+            header: 'Blockfood animation video',
+            labels: ['blockchain']
+        },
+        {
+            id: '262812687',
+            header: 'Cargo Coin pre-roll video',
+            labels: ['blockchain']
+        },
+        {
+            id: '259937313',
+            header: 'TheAbyss - the World’s First DAICO / Explainer',
+            labels: ['blockchain']
+        },
+        {
+            id: '259938812',
+            header: 'Shivers animation video',
+            labels: ['blockchain']
+        },
+        {
+            id: '220559851',
+            header: 'Living With from Lemon Digital',
+            labels: ['interface']
+        },
+        {
+            id: '179961172',
+            header: 'Android Wear video for Google',
+            labels: ['interface']
+        },
+    ]
+
+mixin work(data, currCat)
+    .works_item(data-labels=data.labels.join(' '))
+        .responsive-embed.works_item_video&attributes({
+            'id': `${currCat}${data.id}`,
+            'data-video': data.id,
+            'data-title': data.header
+        })
         .works_item_content
             .works_item_content_top
                 h3.works_item_header
-                    a.works_item_header-link(href="./project.html")
-                        =header
+                    a.works_item_header-link(href=`https://vimeo.com/${data.id}` target="_blank")
+                        =data.header
                 .works_item_labels
-                    each label in labels
+                    each label in data.labels
                         span.label.small
                             =label
-            p.works_item_descr
-                !=description
+            if data.descr
+                p.works_item_descr
+                    !=descr
 
 section#works.works(data-magellan-target="works")
     .grid-container
@@ -22,17 +178,17 @@ section#works.works(data-magellan-target="works")
             | Our 
             strong(data-line=Array(14).join('.')) outstanding 
             br
-            small works
-            | .
+            | works.
         .works_items
             ul#works_tabs.menu.vertical.menu--cats.tabs(data-tabs)
                 each category, i in categories
                     li.works_label.tabs-title(class=(i==0)?'is-active':false)
-                        a(href=`#work_tab_${category}` data-tabs-target=`work_tab_${category}` aria-selected=(i==0)?'true':false) 
-                            =category.charAt(0).toUpperCase() + category.slice(1)
+                        a(href=`#work_tab_${category.label}` data-tabs-target=`work_tab_${category.label}` aria-selected=(i==0)?'true':false) 
+                            =category.title
 
             .works_content(data-tabs-content="works_tabs")
                 each category, i in categories
-                    .works_carousel(id=`work_tab_${category}` class=(i==0)?'is-active':false)
-                        each _ in Array(10)
-                            +work('BRD animation video', 'An ecosystem for cryptocurrency payments. Minimalistic video that consists of circles, lines, lights and shades.', [...categories].sort(()=>.5-Math.random()).slice(0,2))
+                    .works_carousel(id=`work_tab_${category.label}` class=(i==0)?'is-active':false)
+                        - const works_filtered = (category.label !== 'all') ? works.filter(el => el.labels.includes(category.label)) : works;
+                        each work in works_filtered
+                            +work(work, category.label)

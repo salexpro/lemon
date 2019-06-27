@@ -3,19 +3,19 @@ mixin social(mod)
         const social = [
             {
                 icon: 'behance',
-                link: '#'
+                link: 'https://www.behance.net/lemondigital'
             },
             {
                 icon: 'dribble',
-                link: '#'
+                link: 'https://dribbble.com/lemondigital'
             },
             {
                 icon: 'vimeo',
-                link: '#'
+                link: 'https://vimeo.com/lemonvideo'
             }
         ]
     ul.no-bullet.social(class=mod ? 'social--' + mod : false)
         each item in social
             li
-                a(href=`./${item.link}`)
+                a(href=item.link target='_blank')
                     +icon(item.icon, [29, 30], '#414141')

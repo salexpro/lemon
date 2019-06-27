@@ -1,8 +1,40 @@
-mixin review(quote)
+-
+    const reviews = [
+        {
+            photo: './assets/img/reviews/fernando.jpg',
+            quote: 'We used Lemon Digital for a series of short animated videos about a new product we are launching. Their team is responsive, flexible and creative to make sure the quality of the content is the best it can be. I will be using them again in the future if the opportunity arises.',
+            name: 'Fernando Gouveia',
+            position: 'Product Manager',
+            company: 'Xapo'
+        },
+        {
+            photo: './assets/img/reviews/dror.jpg',
+            quote: 'Working with Andrew and his team was a real pleasure. Andrew has been able to quickly understand our business, our goals and the bits and bytes of our target audience as well as how we solve their pain points. This allowed Andrew to really make sure we\'re getting an accurate video with high impact potential. I highly recommend working with Lemon Digital.',
+            name: 'Dror Cohen',
+            position: 'CEO',
+            company: 'AirFleet'
+        },
+        {
+            photo: './assets/img/reviews/ana.jpg',
+            quote: 'We\'ve been working with Lemon Digital since 2017,  we really love working with the team at Lemon Digital, they are very responsive and we can really count on them with everything that we need to create around videos, they are very fast and easy to work with. I highly recommend anyone to work with the Lemon Digital team.',
+            name: 'Ana Castrillon',
+            position: 'Head of Brand',
+            company: 'Voxbone'
+        },
+        {
+            photo: './assets/img/reviews/yana.jpg',
+            quote: 'With Lemon Digital Studio, we started working about a year ago and implemented 4 projects that were really big for us. Two of those projects were introductions to clients and the large public. The terms and conditions in which we worked were always very tight, but we always had time to meet our deadlines and reach exceptional resulst.',
+            name: 'Yana Krivoruchka',
+            position: 'Project manager',
+            company: 'KPMG'
+        }
+    ]
+
+mixin review(data)
     .cell.reviews_item
         blockquote
-            | Passion and skill for developing high quality digital experiences, we are now able to educate and excite our target market succinctly via our sophisticated, elegant and bold web platform - ultimately converting higher volumes of quality leads.
-        +member('Andrew Surname', 'Position', 'Company', 'small')
+            !=data.quote
+        +member(data)(class="team_member--small")
         
 section.reviews
     .grid-container
@@ -11,5 +43,5 @@ section.reviews
             br
             strong(data-line=Array(14).join('.')) about our work.
         .grid-x.grid-margin-x.large-up-2.reviews_items
-            each _ in Array(2)
-                +review
+            each review in reviews
+                +review(review)

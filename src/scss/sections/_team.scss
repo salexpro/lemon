@@ -61,8 +61,9 @@
             width: auto;
             .team_member{
                 &_photo{
-                    width: 50px;
+                    flex: 0 0 50px;
                     @include breakpoint(small down){
+                        flex: 0 0 44px;
                         width: 44px;
                     }
                 }
@@ -75,12 +76,13 @@
             }
         }
         &_photo{
-            width: 85px;
+            flex: 0 0 85px;
             border-bottom: 6px solid $secondary-color;
             margin-bottom: -6px;
             @include breakpoint(small down){
                 margin-bottom: 10px;
                 margin-top: -5px;
+                flex: 0 0 44px;
                 width: 44px;
                 border-bottom-width: 4px;
             }
@@ -111,6 +113,9 @@
                 color: rgba($dark-gray, .5);
                 margin-left: 51px;
             }
+        }
+        &_social a{
+            color: $primary-color;
         }
     }
     &_numbers{

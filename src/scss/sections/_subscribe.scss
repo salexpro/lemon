@@ -3,10 +3,10 @@
     position: absolute;
     bottom: 0;
     height: 246px;
-    background: url('data:image/svg+xml;utf8,<svg width="36" height="34" viewBox="0 0 36 34" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle  fill="#FBDA5A" cx="4" cy="4" r="3.5"></circle></svg>');
+    background: url(data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2234%22%20viewBox%3D%220%200%2036%2034%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ccircle%20fill%3D%22%23FBDA5A%22%20cx%3D%224%22%20cy%3D%224%22%20r%3D%223.5%22%2F%3E%3C%2Fsvg%3E);
     z-index: -1; 
     @include breakpoint(small down){
-        background: url('data:image/svg+xml;utf8,<svg width="22" height="20" viewBox="0 0 22 20" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle  fill="#FBDA5A" cx="2" cy="2" r="2"></circle></svg>');
+        background: url(data:image/svg+xml,%3Csvg%20width%3D%2222%22%20height%3D%2220%22%20viewBox%3D%220%200%2022%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ccircle%20fill%3D%22%23FBDA5A%22%20cx%3D%222%22%20cy%3D%222%22%20r%3D%222%22%2F%3E%3C%2Fsvg%3E);
         height: 146px;
         width: 100%;
     }
@@ -34,6 +34,7 @@
     &_form{
         display: flex;
         max-width: 705px;
+        position: relative;
         @include breakpoint(small down){
             flex-direction: column;
             max-width: 315px;
@@ -57,6 +58,11 @@
             .button{
                 min-width: 160px;
             }
+        }
+        .help-text{
+            position: absolute;
+            top: 100%;
+            right: 0;
         }
     }
 }

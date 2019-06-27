@@ -1,14 +1,47 @@
-mixin member(name, position, company, mod)
-    .team_member(class=mod ? 'team_member--' + mod : false)
+-
+    const team = [
+        {
+            photo: './assets/img/team/andrew.jpg',
+            name: 'Andrew Kozik',
+            position: 'Cofounder',
+            socials: [
+                {
+                    icon: ['linkedin', [20, 20], 'currentColor', [382, 382]],
+                    link: 'https://www.linkedin.com/in/andykozik/'
+                }
+            ]
+        },
+        {
+            photo: './assets/img/team/vlad.jpg',
+            name: 'Vlad Gindin',
+            position: 'Cofounder',
+            socials: [
+                {
+                    icon: ['linkedin', [20, 20], 'currentColor', [382, 382]],
+                    link: 'https://www.linkedin.com/in/vlad-gindin-672a7837/'
+                }
+            ]
+        }
+    ]
+
+mixin member(data)
+    .team_member&attributes(attributes)
         .team_member_photo
-            img(src="https://placeimg.com/170/170/people?" + Math.random(), alt=name)
+            img(src=data.photo alt=data.name)
         .team_member_info
-            #{!mod ? 'h3' : 'p'}(class=mod?'h3':'').team_member_name
-                =name
-            .team_member_company
-                =position
-                if company
-                    span=company
+            #{!attributes ? 'h3' : 'p'}(class=attributes?'h3':'').team_member_name
+                =data.name
+            if data.position || data.company
+                .team_member_company
+                    =data.position
+                    if data.company
+                        span=data.company
+            if data.socials
+                ul.menu.simple.team_member_social
+                    each social in data.socials
+                        li
+                            a(href=social.link target="_blank")
+                                +icon(...social.icon)
 
 mixin team_item(bg, num, prefix, position)
     .team_num
@@ -27,12 +60,12 @@ section#team.team(data-magellan-target="team")
             br
             strong(data-line=Array(7).join('.')) team.
         .team_members
-            each _ in Array(2)
-                +member('Andrew Surname', 'Cofounder')
+            each member in team
+                +member(member)
         .team_numbers
-            +team_item(['blot_1', [82, 84], '#ffcb01'], 2, 'wonderfull', 'art directors')
-            +team_item(['blot_2', [86, 82], '#ffcb01'], 13, 'superb', 'animators')
-            +team_item(['blot_3', [90, 84], '#ffcb01'], 3, 'gorgeous', 'scriptwriters')
-            +team_item(['blot_3', [90, 84], '#ffcb01'], 9, 'nice', 'people')
-            +team_item(['blot_1', [82, 84], '#ffcb01'], 4, 'handsome', 'illustrators')
-            +team_item(['blot_2', [86, 82], '#ffcb01'], 81, 'superb', 'grannies')
+            +team_item(['blot_1', [82, 84], '#ffcb01'], 1, 'wonderful', 'art director')
+            +team_item(['blot_2', [86, 82], '#ffcb01'], 7, 'superb', 'animators')
+            +team_item(['blot_3', [90, 84], '#ffcb01'], 2, 'handsome', 'scriptwriters')
+            +team_item(['blot_3', [90, 84], '#ffcb01'], 3, 'smart', 'project managers')
+            +team_item(['blot_1', [82, 84], '#ffcb01'], 5, 'gorgeous', 'illustrators')
+            +team_item(['blot_2', [86, 82], '#ffcb01'], 1, 'cool', 'sound designer')

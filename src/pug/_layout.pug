@@ -1,23 +1,23 @@
 block const
 -
-    const title  = `${name ?  name + ' - ' : ''}Lemon Digital`;
-    const descr  = 'Description';
-    const domain = 'lemon.salex.pro'
-
-mixin icon(name, size, color, viewbox)
-    - viewbox = viewbox || size
-    svg(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width=size[0] height=size[1] viewbox=viewbox ? "0 0 " + viewbox[0] + " " + viewbox[1] : "")
-        use(fill=color, xlink:href='#' + name)
+    const title  = `${name ?  name + ' - ' : ''}Lemons`;
+    const descr  = 'Lemons (ex-Lemon Digital) animation studio';
+    const domain = 'lemons.studio'
 
 //- Components
 include components/_menu
 include components/_social
 include components/_form
+include components/_icons
 
 doctype html
 html(lang="en")
     include components/_head
     body
+        // Google Tag Manager (noscript)
+        noscript
+            iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-P2QP3J8', height='0', width='0', style='display:none;visibility:hidden')
+        // End Google Tag Manager (noscript)
         main.off-canvas-content.wrap(data-off-canvas-content)
             include sections/_nav
             block content
@@ -25,8 +25,4 @@ html(lang="en")
             //- include components/_popup
         include components/_offcanvas
         block js
-            script.
-                var require = function(){};
-                var module = {};
             script(src="./js/app.min.js")
-        include components/_icons

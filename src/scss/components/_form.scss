@@ -10,16 +10,17 @@
         content: '';
         position: absolute;
         right: 0;
-        top: 251.5px;
+        top: 254px;
         width: calc(50% - (965px / 2) + 60px);
         height: 145px;
-        background: url('data:image/svg+xml;utf8,<svg width="21" height="20" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle  fill="#FBDA5A" cx="2" cy="2" r="2"></circle></svg>');
+        background: url('data:image/svg+xml,%3Csvg%20width%3D%2221%22%20height%3D%2220%22%20viewBox%3D%220%200%2021%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ccircle%20fill%3D%22%23FBDA5A%22%20cx%3D%222%22%20cy%3D%222%22%20r%3D%222%22%2F%3E%3C%2Fsvg%3E');
         @include breakpoint(large down){
             width: 135px;
         }
         @include breakpoint(medium down){
+            top: 252px;
             width: 105px;
-            height: 310px;
+            height: 244px;
         }
         @include breakpoint(small down){
             display: none;
@@ -99,6 +100,14 @@
             transform: translateY(0);
         }
     }
+    &_status{
+        &--error{
+            color: $alert-color;
+        }
+        &--success{
+            color: $success-color;
+        }
+    }
 }
 
 .help-text{
@@ -106,7 +115,7 @@
     font-style: normal;
     opacity: 0;
     transform: translateY(-10px);
-    color: $medium-gray;
+    // color: $medium-gray;
     @include breakpoint(small down){
         font-size: 12px;
     }

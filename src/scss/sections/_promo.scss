@@ -13,9 +13,9 @@
     }
     &_logo{
         position: absolute;
-        top: 45px;
+        top: 32px;
         left: 20px;
-        width: 112px;
+        width: 180px;
         transform: translateY(0);
         transition: 400ms;
         &.is_hidden{
@@ -30,7 +30,7 @@
             position: fixed;
             top: 10px;
             left: 10px;
-            width: 66px;
+            width: 80px;
             z-index: 3;
         }
     }

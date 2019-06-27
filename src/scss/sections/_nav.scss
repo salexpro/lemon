@@ -30,15 +30,29 @@
         user-select: none;
         width: 75px;
         position: fixed;
-        top: 23px;
-        right: 0;
-        z-index: 14;
         transform: translateY(0);
         transition: 400ms;
         @include breakpoint(small down){
-            top: 0;
             width: 42px;
-            right: 3px;
+        }
+        &--menu{
+            top: 23px;
+            right: 0;
+            z-index: 14;
+            @include breakpoint(small down){
+                top: 0;
+                right: 3px;
+            }
+        }
+        &--project{
+            top: 0;
+            left: 0;
+            z-index: 16;
+            visibility: hidden;
+            opacity: 0;
+            .nav_hamb_line{
+                stroke: $primary-color;
+            }
         }
         &.is_hidden:not(.is_active){
             @include breakpoint(small down){

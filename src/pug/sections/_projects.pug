@@ -1,22 +1,67 @@
-mixin project(header, descr, mod)
-    .cell.projects_item(class=mod ? 'large-12 projects_item--' + mod : 'large-6')
-        a.projects_item_img(href="./project.html")
-            if mod
-                img(src="//picsum.photos/1250/580/?image=1076", alt=header)
-                .badges
-                    span.badge
-                        +icon('badge_mo', [23, 38], '#c1a062')
-                    span.badge
-                        +icon('badge_ae', [23, 38], 'none')
+-
+    const projects = [
+        {
+            badges: ['mo', 'ae'],
+            img: 'scorum',
+            title: 'Isometric video',
+            descr: 'Isometric video is when it look like 3d, but actually the video is 2d. :)',
+            mod: 'main'
+        },
+        {
+            img: 'joom',
+            title: '600 short perfomance creatives for JOOM',
+            descr: 'We created 3 different videos and scaled them up to 600 different videos using special software.'
+        },
+        {
+            img: 'school',
+            title: 'Video with 24M views',
+            descr: 'That\'s not a joke, the video we created got viral and got 24M views 296к likes, 33к comments in the Facebook.'
+        },
+        {
+            badges: ['mo', 'ae'],
+            img: 'brd',
+            title: 'Hyper Minimalistic story for BRD',
+            descr: 'Minimalism rules the world, so we ride the wave of hype a little bit'
+        },
+        {
+            img: 'xyo',
+            title: '16 different localization for 1 video',
+            descr: 'Due to better understanding we make localization. A lot of them for XYO.Network, that raised $48M'
+        },
+        {
+            badges: ['mo', 'ae'],
+            img: 'dcp',
+            title: 'Video for Roman Coppolla',
+            descr: 'The video is ready but will be published only in 3 month, once the project is live.',
+            mod: 'main',
+        },
+    ]
+
+mixin project(data)
+    .cell.projects_item(class=data.mod ? 'large-12 projects_item--' + data.mod : 'large-6')
+        #{(data.img != 'dcp') ? 'a' : 'div'}.projects_item_img&attributes({
+            'data-open': (data.img != 'dcp') ? 'project' : false,
+            'data-project': (data.img != 'dcp') ? data.img : false
+        })
+            if data.img
+                img(src=`./assets/img/projects/${data.img}.jpg`, alt=data.title)
             else
-                img(src="//picsum.photos/936/460/?random&" + Math.random(), alt=header)
+                img(src="//picsum.photos/936/460/?random&" + Math.random(), alt=data.title)
+            if data.badges
+                .badges
+                    each badge in data.badges
+                        span.badge
+                            +icon(`badge_${badge}`, [23, 38])
         .projects_item_content
             h3.projects_item_header
-                a.projects_item_header-link(href="./project.html")
-                    !=header
+                #{(data.img != 'dcp') ? 'a' : 'span'}.projects_item_header-link&attributes({
+                    'data-open': (data.img != 'dcp') ? 'project' : false,
+                    'data-project': (data.img != 'dcp') ? data.img : false
+                })
+                    !=data.title
             p.projects_item_descr
-                =descr
-            .projects_item_labels
+                =data.descr
+            //- .projects_item_labels
                 span.label
                     | animation
                 span.label
@@ -26,18 +71,9 @@ mixin project(header, descr, mod)
 section#about.projects(data-magellan-target="about")
     .grid-container
         h2
-            | The way we challenging the status quo is
-            br
-            | by making our videos 
-            strong(data-line=Array(18).join('.')) beautifully designed,
-            br
-            | unique, easy to understand. 
-            br
-            | Just hapenned we make 
-            small animation
-            | 
-            | videos!    
+            | Each video we created has it’s own 
+            strong(data-line=Array(13).join('.')) unique story!
+            //- small animation  
         .grid-x.grid-margin-x.projects_items
-            +project('BRD <br>animation video', 'An ecosystem for cryptocurrency payments. Minimalistic video that consists of circles, lines, lights and shades.', 'main')
-            +project('Jolyy explainer', 'An ecosystem for cryptocurrency payments. Minimalistic video that consists of circles, lines, lights and shades.')
-            +project('SoapBox', 'An ecosystem for cryptocurrency payments. Minimalistic video that consists of circles, lines, lights and shades.')
+            each project in projects
+                +project(project)

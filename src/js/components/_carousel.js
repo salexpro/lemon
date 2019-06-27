@@ -1,5 +1,6 @@
-/* global throttle */
-// @codekit-prepend quiet '../../../node_modules/lodash.throttle/index.js';
+import $ from 'jquery';
+import 'slick-carousel';
+import { throttle } from 'throttle-debounce';
 
 const works_carousel = $('.works_carousel').slick({
     slidesToShow: 1.7,
@@ -21,7 +22,7 @@ works_carousel.on('wheel', (e => {
     if (e.originalEvent.deltaX !== 0)
         e.preventDefault();
 }));
-works_carousel.on('wheel', throttle(function(e) {if (e.originalEvent.deltaX !== 0) $(this).slick((e.originalEvent.deltaX < 0) ? 'slickPrev' : 'slickNext');}, 1000))
+works_carousel.on('wheel', throttle(1000, function(e) {if (e.originalEvent.deltaX !== 0) $(this).slick((e.originalEvent.deltaX < 0) ? 'slickPrev' : 'slickNext');}))
 
 // $('.works_label a').click(function (e) {
 //     e.preventDefault()

@@ -10,6 +10,7 @@ button {
     align-items: center;
     justify-content: space-between;
     min-width: 306px;
+    -webkit-tap-highlight-color: transparent;
     @include breakpoint(small down){
         font-size: 1rem;
         width: 100%;

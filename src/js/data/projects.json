@@ -1,0 +1,118 @@
+{
+    "scorum": {
+        "title": "Scorum",
+        "video": "241302614",
+        "client": "<a href=\"https://scorum.com\" target=\"_blank\">Scorum</a> - crypto media platform",
+        "type": "Explainer video",
+        "logo": "scorum.svg",
+        "badges": [
+            {
+                "name":  "mo",
+                "fill": "#c1a062"
+            },
+            {
+                "name": "ae",
+                "fill": "none"
+            }
+        ],
+        "descr": "<p>Scorum is a blog platform that helps people to share news about sports games and earn crypto. There are also Fantasy Footbal, Betting features.</p><br><p>Our team had a wish to produce isometric video of high quality. And thanks circumstances we have met the client that was ready to give us that challenge. Hopefully we nailed it and the video was done in less then 3 weeks.</p>",
+        "link": "https://www.behance.net/gallery/65759997/Scorum-isometric-explainer-video",
+        "images": [
+            "./assets/img/projects/scorum1.jpg",
+            "./assets/img/projects/scorum2.jpg",
+            "./assets/img/projects/scorum3.jpg",
+            "./assets/img/projects/scorum4.jpg"
+        ]
+    },
+    "joom": {
+        "title": "Joom",
+        "video": "332096688/e7997aa3e6",
+        "client": "<a href=\"https://www.joom.com/ru\" target=\"_blank\">Joom.com</a> - iOS e-commerce marketplace",
+        "type": "Performance creatives",
+        "logo": "joom@2x.png",
+        "descr": "<p><a href=\"https://www.joom.com/ru\" target=\"_blank\">Joom.com</a> is the maketplace where you can find a lot of useful and creative products</p><p>Lemons got a task to produce performance creatives for Google ad networks. 3 different videos each should be done in 3 formats (stories, square, horizontal), 6 different localizations, 2 lengths ( 15 and 30 seconds).</p><p>The main challenge was what products shall we include in the add, as there are more then 100k products. And different products can influence the conversion of the ad. </p><p>We decided to scale video production and produce different 15 videos for each variation (template+format+1 language+length). In total that leads us to about 600 videos. LOL</p><p>Not to do a monkey job by inserting different pictures and text titles we used video API service. We prepared teamplates and voila! Service rendered us about 600 different videos, that client used for promo of the app.</p>",
+        "link": "https://www.joom.com/ru",
+        "images": [
+            "./assets/img/projects/joom1.jpg",
+            "./assets/img/projects/joom2.jpg",
+            "./assets/img/projects/joom3.jpg"
+        ]
+    },
+    "school": {
+        "title": "Next School",
+        "video": "220560693",
+        "client": "<a href=\"https://www.nextschool.org\" target=\"_blank\">Next school</a> - school reformation",
+        "type": "Education video",
+        "logo": "school.png",
+        "descr": "<p>The project tries to change the education system.</p><p>Once we got a task to complete 7 minutes video, we were amazed with that fact as usually videos more then 90 seconds do not catch attention of the users.</p><p>To tackle that task we decided to use isometric style with phrases of well know people.</p><p>The effect of video was colossal. Here are some stats:<br>YouTube: 5 300 000 views, 242 000 likes, 48 000 comments.<br><a href=\"https://www.youtube.com/watch?v=okpg-lVWLbE&ts=\" target=\"_bllank\">https://www.youtube.com/watch?v=okpg-lVWLbE&ts=</a><br>Facebook: 24 000 000 views, 296 000 likes, 42 000 comments. Check it.<br><a href=\"https://www.facebook.com/watch/?v=334919270244966\" target=\"_bllank\">https://www.facebook.com/watch/?v=334919270244966</a></p>",
+        "link": "https://www.nextschool.org",
+        "images": [
+            "./assets/img/projects/school1.jpg",
+            "./assets/img/projects/school2.jpg",
+            "./assets/img/projects/school3.jpg",
+            "./assets/img/projects/school4.jpg",
+            "./assets/img/projects/school5.jpg",
+            "./assets/img/projects/school6.jpg"
+        ]
+    },
+    "brd": {
+        "title": "BRD",
+        "video": "280828211",
+        "client": "BRD - crypto-project",
+        "type": "Explainer video",
+        "logo": "brd.png",
+        "badges": [
+            {
+                "name":  "mo",
+                "fill": "#c1a062"
+            },
+            {
+                "name": "ae",
+                "fill": "none"
+            }
+        ],
+        "descr": "<p>BRD is an ecosystem for cryptocurrency payments.</p><p>Hypervideo agency asked us to create the video for their client and explain how BRD works. The brand guidelines of the client were so minimalistic so we decided to play mostly with colors, than with difficult shapes. So minimalistic video consists of circles, lines, lights and shades.</p><p>The project become the most viewed explainer video in our portfolio and got 2 achievements from Behance community. Here is the page of the project at Behance: <a href=\"https://www.behance.net/gallery/68829607/BRD\" target=\"_blank\">https://www.behance.net/gallery/68829607/BRD</a></p>",
+        "link": "https://www.behance.net/gallery/68829607/BRD-animation-video",
+        "images": [
+            "./assets/img/projects/brd1.jpg",
+            "./assets/img/projects/brd2.jpg",
+            "./assets/img/projects/brd3.jpg",
+            "./assets/img/projects/brd4.jpg",
+            "./assets/img/projects/brd5.jpg"
+        ]
+    },
+    "xyo": {
+        "title": "XYO.Network",
+        "video": "268011369",
+        "client": "<a href=\"http://xyo.Network\" target=\"_blank\">XYO.Network</a> - crypto project",
+        "type": "Explainer video",
+        "logo": "xyo@2x.png",
+        "descr": "<p>XYO is a decentralized data oracle with the ability to validate data from multiple sources without requiring a trusted relationship.</p><br><p>Due to launch of their token sale, guys asked us to produce explainer in a short period of time. The client's hypothesis was that due to worldwide launch it would be cool to have 16 different language versions of the same video. We simply completed it. So people with the only knowledge of the native language can learn more about project and fund it with crypto.</p><p>Horaay, the project raised $48M from a lot of people all over the world.</p>",
+        "link": "https://xyo.network/",
+        "images": [
+            "./assets/img/projects/xyo1.jpg",
+            "./assets/img/projects/xyo2.jpg",
+            "./assets/img/projects/xyo3.jpg"
+        ]
+    },
+    "dcp": {
+        "title": "DCP",
+        "video": "163721649",
+        "client": "DCP",
+        "badges": [
+            {
+                "name":  "mo",
+                "fill": "#c1a062"
+            },
+            {
+                "name": "ae",
+                "fill": "none"
+            }
+        ],
+        "descr": "Description",
+        "link": "#",
+        "images": [
+            "//picsum.photos/936/460/?1"
+        ]
+    }
+}

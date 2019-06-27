@@ -1,6 +1,85 @@
-mixin client(img, name)
-    .clients_item
-        img(src=`./assets/img/clients/${img}.png` srcset=`./assets/img/clients/${img}.png 1x, ./assets/img/clients/${img}@2x.png 2x` alt=name)
+-
+    const clients = [
+        {
+            img: 'zeepin',
+            title: 'Zeepin',
+            link: 'https://vimeo.com/304453062/407679ea5c'
+        },
+        {
+            img: 'xyo',
+            title: 'XYO Network',
+            link: 'https://vimeo.com/268011369'
+        },
+        {
+            img: 't-mobile',
+            title: 'T-Mobile',
+            link: 'https://vimeo.com/220551748/152c7bd024'
+        },
+        {
+            img: 'appodeal',
+            title: 'Appodeal',
+            link: 'https://vimeo.com/154024863'
+        },
+        {
+            img: 'appsflyer',
+            title: 'AppsFlyer',
+            link: 'https://vimeo.com/184025688'
+        },
+        {
+            img: 'google',
+            title: 'Google',
+            link: 'https://vimeo.com/179961172'
+        },
+        {
+            img: 'joom',
+            title: 'Joom',
+            link: 'https://vimeo.com/332096688/e7997aa3e6'
+        },
+        {
+            img: 'kpmg',
+            title: 'KPMG',
+        },
+        {
+            img: 'jivosite',
+            title: 'Jivosite',
+            link: 'https://vimeo.com/103913718/873982b2c3'
+        },
+        {
+            img: 'rubiconproject',
+            title: 'Rubicon Project',
+            link: 'https://vimeo.com/338882653/d259138862'
+        },
+        {
+            img: 'unicef',
+            title: 'Unicef',
+            link: 'https://vimeo.com/302445568/26a589f1ab'
+        },
+        {
+            img: 'voxbone',
+            title: 'Voxbone',
+        },
+        {
+            img: 'xapo',
+            title: 'Xapo',
+            link: 'https://vimeo.com/323836822/67da366f68'
+        },
+        {
+            img: 'fiverr',
+            title: 'Fiverr',
+            link: 'https://vimeo.com/264600231'
+        },
+        {
+            img: 'cisco',
+            title: 'Cisco',
+        },
+    ]
+
+mixin client(data)
+    #{data.link ? 'a' : 'div'}.clients_item&attributes({
+        'href': data.link || false,
+        'target': data.link ? '_blank' : false
+    })
+        img(src=`./assets/img/clients/${data.img}.png` srcset=`./assets/img/clients/${data.img}.png 1x, ./assets/img/clients/${data.img}@2x.png 2x` alt=data.title)
 
 section#clients.clients(data-magellan-target="clients")
     .grid-container
@@ -10,9 +89,5 @@ section#clients.clients(data-magellan-target="clients")
             | we worked 
             strong(data-line=Array(8).join('.')) with.
         .clients_items
-            each _ in Array(3)
-                +client('adidas', 'Adidas')
-            each _ in Array(3)
-                +client('play2live', 'Play 2 Live')
-            each _ in Array(3)
-                +client('minter_one', 'Minter One')
+            each client in clients
+                +client(client)
