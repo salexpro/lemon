@@ -1,0 +1,13 @@
+{
+    "name": "salexpro/lemon",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "^6.0"
+    },
+    "authors": [
+        {
+            "name": "Alexander",
+            "email": "dev@salex.pro"
+        }
+    ]
+}
