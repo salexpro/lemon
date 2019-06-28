@@ -9,7 +9,18 @@
             line-height: 1.5;
         }
     }
+    &--full{
+        margin-top: 120px;
+        margin-bottom: 0;
+        @include breakpoint(small down){
+            margin-top: 60px;
+        }
+    }
     &_label{
+        margin-right: 40px;
+        @include breakpoint(medium down){
+            margin-right: 32px;
+        }
         @include breakpoint(small down){
             margin-right: 20px;
         }
@@ -20,11 +31,13 @@
             outline: none;
         }
     }
+    &_content{
+        margin-top: 50px;
+    }
     &_items{
-        display: flex;
-        margin-top: 54px;
+        margin-top: 100px;
         @include breakpoint(medium down){
-            margin-top: 48px;
+            margin-top: 60px;
         }
         @include breakpoint(small down){
             margin-top: 24px;
@@ -32,113 +45,115 @@
         }
     }
     &_carousel{
-        width: calc(50vw + (995px / 2) - 121px - 75px);
-        @include breakpoint(small down){
-            width: calc(100vw - 42px);
-        }
         &:not(.is-active){
             display: none;
+        }
+        &_slick{
+            @include breakpoint(small down){
+                width: calc(100vw - 42px);
+                margin: 0;
+            }
         }
     }
     &_item{
         outline: none;
         max-width: 560px;
         width: 100%;
-        float:  none;
-        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
         @include breakpoint(medium down){
             max-width: 400px;
         }
         @include breakpoint(small down){
-            max-width: 236px;
+            &.cell:not(.works_item--full){
+                max-width: 236px;
+                margin: 0;
+            }
         }
         &_video{
             position: relative;
-            &:not([data-vimeo-initialized]){
-                cursor: pointer;
-                &::before, &::after{
-                    content: '';
-                    position: absolute;
-                }
-                &::before{
-                    top: calc(50% - 20px);
-                    left: calc(50% - 32.5px);
-                    width: 65px;
-                    height: 40px;
-                    background: rgba(23,35,34,.75);
-                    border-radius: 5px;
-                    transition: 300ms;
-                }
-                &::after{
-                    top: 50%;
-                    left: 50%;
-                    @include css-triangle(10px, $white, right);
-                    border-left-width: 20px;
-                    transform: translate(calc(-50% + 2px), -50%);
-                    transition: 300ms;
-                }
-                &:hover{
-                    &::before{
-                        background: rgb(255, 203, 1);
-                    }
-                    &::after{
-                        border-left-color: rgb(127, 102, 0);
-                    }
+            cursor: pointer;
+            outline: none;
+            &::before, &::after{
+                content: '';
+                position: absolute;
+            }
+            &::before{
+                top: calc(50% - 15px);
+                left: calc(50% - 25px);
+                width: 50px;
+                height: 30px;
+                background: $white;
+                border-radius: 5px;
+                transform: translateY(10px);
+                transition: opacity ease-in-out 300ms, transform 500ms;
+                box-shadow: 0 0 0 10vw rgba($primary-color, 0.8);
+                opacity: 0;
+                @include breakpoint(small down){
+                    box-shadow: 0 0 0 50vw rgba($primary-color, 0.8);
                 }
             }
-            &[data-vimeo-initialized]{
-                
+            &::after{
+                top: 50%;
+                left: 50%;
+                @include css-triangle(6px, $dark-gray, right);
+                border-left-width: 14px;
+                transform: translate(calc(-50% + 2px), calc(-50% + 10px));
+                transition: 500ms;
+                opacity: 0;
+            }
+            &:hover, &:focus{
+                &::before{
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                &::after{
+                    opacity: 1;
+                    transform: translate(calc(-50% + 2px), -50%);
+                }
             }
         }
         &_content{
             background-color: $main-gray;
-            padding: 30px 45px 48px;
+            padding: 10px 20px;
+            min-height: 96px;
             flex: 1 1 auto;
-            @include breakpoint(small down){
-                padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            @include breakpoint(medium down){
+                padding: 10px;
             }
-            &_top{
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                @include breakpoint(medium down){
-                    flex-direction: column;
-                    margin-bottom: 9px;
-                }
+            @include breakpoint(small down){
+                padding: 20px;
             }
         }
         &_header{
-            margin-bottom: 2px;
-            @include breakpoint(medium down){
-                margin: 0;
+            padding-bottom: 2px;
+            margin-bottom: auto;
+            @include breakpoint(medium only){
+                font-size: 14px;
             }
             &-link{
                 color: $dark-gray; 
-            }
-        }
-        &_descr{
-            font-size: 13px;
-            @include breakpoint(small down){
-                margin: 0;
             }
         }
         a{
             outline: none;
         }
     }
+    &_bottom{
+        margin-top: 50px;
+        text-align: center;
+    }
 }
+
 .slick{
     &-track{
         display: flex;
         align-items: stretch;
     }
     &-slide{
-        margin-right: 40px;
-        @include breakpoint(medium down){
-            margin-right: 30px;
-        }
-        @include breakpoint(small down){
-            margin-right: 20px;
-        }
+        margin-right: 20px;
     }
 }

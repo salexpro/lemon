@@ -25,6 +25,10 @@ button {
             transform: translateX(6px);
         }
     }
+    &.medium{
+        width: 100%;
+        max-width: 387px;
+    }
     &.large{
         min-width: 410px;
         @include breakpoint(small down){

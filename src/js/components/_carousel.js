@@ -2,19 +2,23 @@ import $ from 'jquery';
 import 'slick-carousel';
 import { throttle } from 'throttle-debounce';
 
-const works_carousel = $('.works_carousel').slick({
-    slidesToShow: 1.7,
-    variableWidth: true,
-    slidesToScroll: 1,
-    arrows: false,
-    infinite: false,
-    speed: 1000,
+const works_carousel = $('.works_carousel_slick').slick({
+    mobileFirst: true,
     responsive: [
         {
-            breakpoint: 1025,
+            breakpoint: 0,
             settings: {
-                speed: 300
+                slidesToShow: 1.7,
+                variableWidth: true,
+                slidesToScroll: 1,
+                arrows: false,
+                infinite: false,
+                speed: 300,
             }
+        },
+        {
+            breakpoint: 640,
+            settings: 'unslick'
         }
     ]
 });

@@ -19,7 +19,7 @@ mixin form(header, mod)
                         span.form-error(id=`phone_error${rnd}`)
                             | Phone is required field
                     .form_block_bottom
-                        button.button(type="submit")
+                        button.button(type="submit" id=`formButton${rnd}`)
                             | Send
                             include _button_icon
                         .help-text(id=`formMessage${rnd}`)

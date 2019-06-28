@@ -44,7 +44,7 @@
                 right: 3px;
             }
         }
-        &--project{
+        &--project.is_active{
             top: 0;
             left: 0;
             z-index: 16;
@@ -52,6 +52,27 @@
             opacity: 0;
             .nav_hamb_line{
                 stroke: $primary-color;
+            }
+            &:hover, &:focus{
+                .nav_hamb_icon{
+                    transform: rotate(135deg);
+                }
+            }
+        }
+        &--video.is_active{
+            position: absolute;
+            left: -22px;
+            top: calc(100% - 10px);
+            @include breakpoint(small down){
+                width: 75px;
+            }
+            .nav_hamb_line{
+                stroke: $primary-color;
+            }
+            &:hover, &:focus{
+                .nav_hamb_icon{
+                    transform: rotate(135deg);
+                }
             }
         }
         &.is_hidden:not(.is_active){

@@ -1,3 +1,101 @@
 .reveal{
-    
+    outline: none;
+    position: static;
+    margin: auto;
+    position: relative;
+    top: auto !important;
+    overflow: visible;
+    width: 100%;
+    max-width: 860px;
+    @include breakpoint(small down) {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+    }
+    &-overlay{
+        padding: 20px 75px;
+        @include breakpoint(small down) {
+            padding: 10px;
+        }
+        &[style*="block"]{
+            display: flex !important;
+            align-items: center;
+        }
+    }
+    &_video{
+        z-index: 2;
+        position: relative;
+    }
+
+    &_close{
+        top: 20px;
+        right: -46px;
+        @include breakpoint(small down) {
+            right: 10px;
+            top: auto;
+            bottom: -36px;
+        }
+    }
+
+    &.fade-in.mui-enter {
+        transform: translate3d(0, -18px, 0) perspective(435px) rotateX(8deg);
+
+        @include breakpoint(small down) {
+            transform: none;
+        }
+
+        &.mui-enter-active {
+            transform: translate3d(0, 0, 0) perspective(435px) rotateX(0);
+
+            @include breakpoint(small down) {
+                transform: none;
+            }
+        }
+    }
+
+    &.fade-out.mui-leave {
+        transform: translate3d(0, 0, 0) perspective(435px) rotateX(0);
+
+        @include breakpoint(small down) {
+            transform: none;
+        }
+
+        &.mui-leave-active {
+            transform: translate3d(0, -18px, 0) perspective(435px) rotateX(8deg);
+
+            @include breakpoint(small down) {
+                transform: none;
+            }
+        }
+    }
+}
+
+.fade-in.mui-enter {
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    opacity: 0;
+    transition-property: all;
+
+    @include breakpoint(small down) {
+        transition-duration: 300ms;
+    }
+}
+
+.fade-in.mui-enter.mui-enter-active {
+    opacity: 1;
+}
+
+.fade-out.mui-leave {
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+    opacity: 1;
+    transition-property: all;
+
+    @include breakpoint(small down) {
+        transition-duration: 300ms;
+    }
+}
+
+.fade-out.mui-leave.mui-leave-active {
+    opacity: 0;
 }

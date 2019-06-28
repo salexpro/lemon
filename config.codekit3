@@ -2345,6 +2345,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/pages/works.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/works.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/sections/_achievements.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -2482,6 +2492,16 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_works.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_works_full.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_works_full.html",
 		"oF": 0,
 		"oS": 0
 		},

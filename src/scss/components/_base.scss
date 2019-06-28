@@ -56,8 +56,11 @@ svg{
     -webkit-tap-highlight-color: transparent;
 }
 
-.label + .label{
-    margin-left: 10px;
+.label{
+    margin-right: 10px;
+    &:last-child{
+        margin: 0;
+    }
 }
 
 textarea{

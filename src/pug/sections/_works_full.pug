@@ -153,7 +153,7 @@
     ]
 
 mixin work(data, currCat)
-    .cell.works_item(data-labels=data.labels.join(' '))
+    .cell.works_item.works_item--full(data-labels=data.labels.join(' '))
         .responsive-embed.works_item_video&attributes({
             'id': `${currCat}${data.id}`,
             'data-video': data.id,
@@ -169,7 +169,8 @@ mixin work(data, currCat)
                     span.label.small
                         =label
 
-section#works.works(data-magellan-target="works")
+include ../components/_logo
+section.works.works--full
     .grid-container
         h2
             | Our 
@@ -177,21 +178,16 @@ section#works.works(data-magellan-target="works")
             br
             | works.
         .works_items
-            ul#works_tabs.menu.menu--cats.tabs(data-tabs)
+            ul#works_tabs.menu.menu--cats.tabs(data-tabs data-deep-link="true")
                 each category, i in categories
                     li.works_label.tabs-title(class=(i==0)?'is-active':false)
-                        a(href=`#work_tab_${category.label}` data-tabs-target=`work_tab_${category.label}` aria-selected=(i==0)?'true':false) 
+                        a(href=`#${category.label}` data-tabs-target=`${category.label}` aria-selected=(i==0)?'true':false) 
                             =category.title
 
             .works_content(data-tabs-content="works_tabs")
                 each category, i in categories
-                    .works_carousel(id=`work_tab_${category.label}` class=(i==0)?'is-active':false)
-                        .grid-x.grid-margin-x.large-up-4.medium-up-3.works_carousel_slick
+                    .works_carousel(id=`${category.label}` class=(i==0)?'is-active':false)
+                        .grid-x.grid-margin-x.large-up-4.medium-up-3.small-up-12
                             - const works_filtered = (category.label !== 'all') ? works.filter(el => el.labels.includes(category.label)) : works;
                             each work in works_filtered
                                 +work(work, category.label)
-                        .works_bottom
-                            a.button.medium(href=`/works#${category.label}`)
-                                | Watch all videos
-                                span.button_icon
-                                    +icon('arrow', [24, 14], '#454545')

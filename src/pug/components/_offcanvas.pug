@@ -1,7 +1,7 @@
 #menu.off-canvas.position-right.nav_mobile(data-off-canvas data-transition="overlap" data-auto-focus="false")
     +menu('vertical')
     +social('mobile')
-
-#project.off-canvas.position-right.projects_popup(data-off-canvas data-transition="overlap" data-auto-focus="false" data-content-scroll="false")
-    include _project
-+hamb()(class="is_active nav_hamb--project" aria-label="Close project" data-close="project")
+if page == 'main'
+    #project.off-canvas.position-right.projects_popup(data-off-canvas data-transition="overlap" data-auto-focus="false" data-content-scroll="false")
+        include _project
+    +hamb()(class="is_active nav_hamb--project" aria-label="Close project" data-close="project")

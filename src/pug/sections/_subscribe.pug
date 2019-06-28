@@ -7,7 +7,7 @@ section#guide.subscribe(data-magellan-target="guide")
             | process guide
         form.subscribe_form(data-abide novalidate data-id="2")
             input(type="text" name="email" placeholder="Email" required)
-            button.button(type="submit")
+            button.button(type="submit" id="formButton2")
                 | Send
                 include ../components/_button_icon
             .help-text(id=`formMessage2`)
