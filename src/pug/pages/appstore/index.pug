@@ -1,0 +1,90 @@
+- const title = 'Find the difference'
+- const descr = 'Find lighter color'
+- const domain = 'lemons.studio'
+
+mixin icon(name, size, color, viewbox)
+    - viewbox = viewbox || size
+    svg(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width=size[0] height=size[1] viewbox=viewbox ? "0 0 " + viewbox[0] + " " + viewbox[1] : "")
+        use(fill=color, xlink:href='/assets/img/sprite_store.svg#' + name)
+
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        title= title
+        meta(name="description" content=descr)
+
+        //- PWA meta
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover")
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+        meta(name='apple-mobile-web-app-capable', content='yes')
+        meta(name='apple-mobile-web-app-status-bar-style', content='default')
+        meta(name='format-detection', content='telephone=no')
+
+        //- Og meta
+        meta(property='og:title', content=title)
+        meta(property='og:description', content=descr)
+        meta(property='og:type', content='website')
+        meta(property='og:image', content=`https://${domain}/assets/img/appstore/icon@2x.jpg`)
+        //- meta(property='og:image:width', content='1200')
+        //- meta(property='og:image:height', content='630')
+
+        //- Favicon (realfavicongenerator.net)
+        link(rel="apple-touch-icon", sizes="180x180", href="./favicon/apple-touch-icon.png")
+        link(rel="icon", type="image/png", sizes="32x32", href="./favicon/favicon-32x32.png")
+        link(rel="icon", type="image/png", sizes="16x16", href="./favicon/favicon-16x16.png")
+        link(rel="manifest", href="./favicon/site.webmanifest")
+        link(rel="mask-icon", href="./favicon/safari-pinned-tab.svg", color="#ffcb01")
+        meta(name="msapplication-TileColor", content="#ffffff")
+        meta(name="msapplication-config", content="./favicon/browserconfig.xml")
+        meta(name="theme-color", content="#ffffff")
+
+        //- Styles
+        link(rel="stylesheet", href="/css/appstore.css")
+    body
+        main.wrap
+            .store
+                .store_app
+                    .store_app_icon
+                        img(srcset="/assets/img/appstore/icon@2x.jpg 2x, /assets/img/appstore/icon.jpg 1x" src="/assets/img/appstore/icon.jpg", alt="")
+                    .store_app_info
+                        .store_app_info_top
+                            p.store_app_title
+                                | Find the difference
+                            small.store_app_slogan
+                                | Find lighter color
+                        .store_app_info_bottom
+                            a.button(href="#")
+                                | GET
+                            //- a.button.button--dots(href="#")
+                                +icon('dots', [16, 4])
+                ul.store_features
+                    li.store_feature
+                        .store_feature_icon
+                            each _ in Array(5)
+                                +icon('star', [18, 16])
+                        p.store_feature_label
+                            | 4.5, 64 Ratings
+                    //- li.store_feature
+                        .store_feature_icon
+                            img(srcset="./assets/img/appstore/choice@2x.png 2x, ./assets/img/appstore/choice.png 1x" src="./assets/img/appstore/choice.png", alt="Editors’ Choice")
+                        p.store_feature_label
+                            | Games
+                    li.store_feature
+                        .store_feature_icon
+                            span No
+                            | 25
+                        p.store_feature_label
+                            | Puzzles
+                    li.store_feature
+                        .store_feature_icon
+                            | 4+
+                        p.store_feature_label
+                            | Age Rating
+                .slider
+                    each _, i in Array(4)
+                        .slider_item
+                            img(srcset=`/assets/img/appstore/screenshots/${i+1}@2x.jpg 2x, /assets/img/appstore/screenshots/${i+1}.jpg 1x` src=`/assets/img/appstore/screenshots/${i+1}.jpg` alt=`Screenshot ${i+1}`)
+                //- .content
+                    p
+                        | Guide a mother and her child as they embark on a journey through magical architecture, discovering illusionary pathways and delig
+        script(src="/js/appstore.min.js")

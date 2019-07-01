@@ -677,14 +677,6 @@
 		"oAP": "/build/build",
 		"oF": 0
 		},
-	"/build.zip": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/build/build.zip",
-		"oF": 1
-		},
 	"/docs": {
 		"ft": 65536,
 		"oA": 1,
@@ -821,14 +813,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"/src/assets/favicon/.gitkeep": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/assets/favicon/.gitkeep",
-		"oF": 0
 		},
 	"/src/assets/favicon/android-chrome-192x192.png": {
 		"ft": 32768,
@@ -974,6 +958,102 @@
 		"oAP": "/build/assets/favicon/site.webmanifest",
 		"oF": 0
 		},
+	"/src/assets/font/SFProDisplay/SFProDisplay-Bold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/font/SFProDisplay/SFProDisplay-Bold.woff",
+		"oF": 0
+		},
+	"/src/assets/font/SFProDisplay/SFProDisplay-Bold.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/font/SFProDisplay/SFProDisplay-Bold.woff2",
+		"oF": 0
+		},
+	"/src/assets/font/SFProDisplay/SFProDisplay-Regular.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/font/SFProDisplay/SFProDisplay-Regular.woff",
+		"oF": 0
+		},
+	"/src/assets/font/SFProDisplay/SFProDisplay-Regular.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/font/SFProDisplay/SFProDisplay-Regular.woff2",
+		"oF": 0
+		},
+	"/src/assets/font/SFProDisplay/SFProDisplay-Semibold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/font/SFProDisplay/SFProDisplay-Semibold.woff",
+		"oF": 0
+		},
+	"/src/assets/font/SFProDisplay/SFProDisplay-Semibold.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/font/SFProDisplay/SFProDisplay-Semibold.woff2",
+		"oF": 0
+		},
+	"/src/assets/font/SFProText/SFUIText-Bold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/font/SFProText/SFUIText-Bold.woff",
+		"oF": 0
+		},
+	"/src/assets/font/SFProText/SFUIText-Bold.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/font/SFProText/SFUIText-Bold.woff2",
+		"oF": 0
+		},
+	"/src/assets/font/SFProText/SFUIText-Regular.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/font/SFProText/SFUIText-Regular.woff",
+		"oF": 0
+		},
+	"/src/assets/font/SFProText/SFUIText-Regular.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/font/SFProText/SFUIText-Regular.woff2",
+		"oF": 0
+		},
+	"/src/assets/font/SFProText/SFUIText-Semibold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/font/SFProText/SFUIText-Semibold.woff",
+		"oF": 0
+		},
+	"/src/assets/font/SFProText/SFUIText-Semibold.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/font/SFProText/SFUIText-Semibold.woff2",
+		"oF": 0
+		},
 	"/src/assets/font/SFUIText-Bold.woff": {
 		"cB": 0,
 		"ft": 8192,
@@ -1081,6 +1161,138 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/build/assets/img/advisors/kereel.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/appstore/choice.png": {
+		"ft": 32768,
+		"iS": 1506,
+		"oA": 0,
+		"oAP": "/build/assets/img/appstore/choice.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/appstore/choice@2x.png": {
+		"ft": 32768,
+		"iS": 4268,
+		"oA": 0,
+		"oAP": "/build/assets/img/appstore/choice@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/appstore/Icon.jpg": {
+		"ft": 16384,
+		"iS": 112504,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/appstore/icon.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/appstore/Icon@2x.jpg": {
+		"ft": 16384,
+		"iS": 254715,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/appstore/icon@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/appstore/screenshots/1.jpg": {
+		"ft": 16384,
+		"iS": 28967,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/appstore/screenshots/1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/appstore/screenshots/1@2x.jpg": {
+		"ft": 16384,
+		"iS": 70154,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/appstore/screenshots/1@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/appstore/screenshots/2.jpg": {
+		"ft": 16384,
+		"iS": 39985,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/appstore/screenshots/2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/appstore/screenshots/2@2x.jpg": {
+		"ft": 16384,
+		"iS": 80098,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/appstore/screenshots/2@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/appstore/screenshots/3.jpg": {
+		"ft": 16384,
+		"iS": 47383,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/appstore/screenshots/3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/appstore/screenshots/3@2x.jpg": {
+		"ft": 16384,
+		"iS": 109878,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/appstore/screenshots/3@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/appstore/screenshots/4.jpg": {
+		"ft": 16384,
+		"iS": 30962,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/appstore/screenshots/4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/appstore/screenshots/4@2x.jpg": {
+		"ft": 16384,
+		"iS": 76423,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/appstore/screenshots/4@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -1881,6 +2093,50 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/src/assets/img/sign1.png": {
+		"ft": 32768,
+		"iS": 3949,
+		"oA": 0,
+		"oAP": "/build/assets/img/sign1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/sign1@2x.png": {
+		"ft": 32768,
+		"iS": 3949,
+		"oA": 0,
+		"oAP": "/build/assets/img/sign1@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/sign2.png": {
+		"ft": 32768,
+		"iS": 3868,
+		"oA": 0,
+		"oAP": "/build/assets/img/sign2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/sign2@2x.png": {
+		"ft": 32768,
+		"iS": 9026,
+		"oA": 0,
+		"oAP": "/build/assets/img/sign2@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/assets/img/sprite.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1889,6 +2145,16 @@
 		"oF": 1,
 		"opt": 1,
 		"plM": 1103248744445,
+		"prP": 0
+		},
+	"/src/assets/img/sprite_store.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/sprite_store.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103252938751,
 		"prP": 0
 		},
 	"/src/assets/img/team/andrew.jpg": {
@@ -2071,10 +2337,21 @@
 	"/src/js/app.js": {
 		"bF": 4,
 		"ft": 64,
-		"ma": 1,
-		"mi": 0,
+		"ma": 0,
+		"mi": 1,
 		"oA": 0,
 		"oAP": "/build/js/app.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/src/js/appstore.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/build/js/appstore.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -2211,7 +2488,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_layout.html",
+		"oAP": "/build/pug/_layout.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2221,7 +2498,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_button_icon.html",
+		"oAP": "/build/pug/components/_button_icon.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2231,7 +2508,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_form.html",
+		"oAP": "/build/pug/components/_form.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2241,7 +2518,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_head.html",
+		"oAP": "/build/pug/components/_head.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2251,7 +2528,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_icons.html",
+		"oAP": "/build/pug/components/_icons.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2261,7 +2538,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_logo.html",
+		"oAP": "/build/pug/components/_logo.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2271,7 +2548,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_menu.html",
+		"oAP": "/build/pug/components/_menu.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2281,7 +2558,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_offcanvas.html",
+		"oAP": "/build/pug/components/_offcanvas.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2291,7 +2568,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_popup.html",
+		"oAP": "/build/pug/components/_popup.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2301,7 +2578,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_project.html",
+		"oAP": "/build/pug/components/_project.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2311,7 +2588,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_social.html",
+		"oAP": "/build/pug/components/_social.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2321,7 +2598,161 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_window.html",
+		"oAP": "/build/pug/components/_window.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/pages/appstore/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/pug/pages/appstore/favicon.ico",
+		"oF": 0
+		},
+	"/src/pug/pages/appstore/favicon/android-chrome-192x192.png": {
+		"ft": 32768,
+		"iS": 5283,
+		"oA": 0,
+		"oAP": "/build/pug/pages/appstore/favicon/android-chrome-192x192.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/pug/pages/appstore/favicon/android-chrome-512x512.png": {
+		"ft": 32768,
+		"iS": 14712,
+		"oA": 0,
+		"oAP": "/build/pug/pages/appstore/favicon/android-chrome-512x512.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/pug/pages/appstore/favicon/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 4955,
+		"oA": 0,
+		"oAP": "/build/pug/pages/appstore/favicon/apple-touch-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/pug/pages/appstore/favicon/browserconfig.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/pug/pages/appstore/favicon/browserconfig.xml",
+		"oF": 0
+		},
+	"/src/pug/pages/appstore/favicon/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 760,
+		"oA": 0,
+		"oAP": "/build/pug/pages/appstore/favicon/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/pug/pages/appstore/favicon/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 1096,
+		"oA": 0,
+		"oAP": "/build/pug/pages/appstore/favicon/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/pug/pages/appstore/favicon/mstile-144x144.png": {
+		"ft": 32768,
+		"iS": 4268,
+		"oA": 0,
+		"oAP": "/build/pug/pages/appstore/favicon/mstile-144x144.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/pug/pages/appstore/favicon/mstile-150x150.png": {
+		"ft": 32768,
+		"iS": 4249,
+		"oA": 0,
+		"oAP": "/build/pug/pages/appstore/favicon/mstile-150x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/pug/pages/appstore/favicon/mstile-310x150.png": {
+		"ft": 32768,
+		"iS": 4683,
+		"oA": 0,
+		"oAP": "/build/pug/pages/appstore/favicon/mstile-310x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/pug/pages/appstore/favicon/mstile-310x310.png": {
+		"ft": 32768,
+		"iS": 9418,
+		"oA": 0,
+		"oAP": "/build/pug/pages/appstore/favicon/mstile-310x310.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/pug/pages/appstore/favicon/mstile-70x70.png": {
+		"ft": 32768,
+		"iS": 3000,
+		"oA": 0,
+		"oAP": "/build/pug/pages/appstore/favicon/mstile-70x70.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/pug/pages/appstore/favicon/safari-pinned-tab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/build/pug/pages/appstore/favicon/safari-pinned-tab.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103269715967,
+		"prP": 0
+		},
+	"/src/pug/pages/appstore/favicon/site.webmanifest": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/pug/pages/appstore/favicon/site.webmanifest",
+		"oF": 0
+		},
+	"/src/pug/pages/appstore/index.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/appstore/index.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2345,13 +2776,13 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/works.pug": {
+	"/src/pug/pages/works/index.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/works.html",
+		"oAP": "/build/works/index.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2361,7 +2792,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_achievements.html",
+		"oAP": "/build/pug/sections/_achievements.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2371,7 +2802,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_advisors.html",
+		"oAP": "/build/pug/sections/_advisors.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2381,7 +2812,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_clients.html",
+		"oAP": "/build/pug/sections/_clients.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2391,7 +2822,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_experience.html",
+		"oAP": "/build/pug/sections/_experience.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2401,7 +2832,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_footer.html",
+		"oAP": "/build/pug/sections/_footer.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2411,7 +2842,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_header.html",
+		"oAP": "/build/pug/sections/_header.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2421,7 +2852,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_ico.html",
+		"oAP": "/build/pug/sections/_ico.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2431,7 +2862,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_nav.html",
+		"oAP": "/build/pug/sections/_nav.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2441,7 +2872,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_projects.html",
+		"oAP": "/build/pug/sections/_projects.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2451,7 +2882,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_promo.html",
+		"oAP": "/build/pug/sections/_promo.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2461,7 +2892,17 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_reviews.html",
+		"oAP": "/build/pug/sections/_reviews.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_story.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/pug/sections/_story.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2471,7 +2912,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_subscribe.html",
+		"oAP": "/build/pug/sections/_subscribe.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2481,7 +2922,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_team.html",
+		"oAP": "/build/pug/sections/_team.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2491,7 +2932,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_works.html",
+		"oAP": "/build/pug/sections/_works.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2501,7 +2942,7 @@
 		"ft": 512,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/_works_full.html",
+		"oAP": "/build/pug/sections/_works_full.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2528,6 +2969,19 @@
 		"oA": 0,
 		"oAP": "/build/css/app.css",
 		"oF": 1,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/appstore.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/build/css/appstore.css",
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
@@ -2791,6 +3245,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/src/scss/sections/_story.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_story.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/src/scss/sections/_subscribe.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -2842,6 +3309,14 @@
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
+		},
+	"/zimtQAey": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/zimtQAey",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -4771,9 +5246,9 @@
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.html",
 		"autoOutputPathRelativePath": "/",
-		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace1": "/pug/pages",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 1,
+		"autoOutputPathStyle": 3,
 		"compileDebug": 0,
 		"outputStyle": 0,
 		"shouldRunCacheBuster": 1,
