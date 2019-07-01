@@ -1,0 +1,84 @@
+.story{
+    position: relative;
+    padding: 0 60px;
+    margin-bottom: 212px;
+    @include breakpoint(medium down){
+        margin-bottom: 153px;
+    }
+    @include breakpoint(small down){
+        padding: 0 30px;
+        margin-bottom: 110px;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 67px;
+        width: calc(50% - (965px / 2) + 318px);
+        height: 145px;
+        background: url('data:image/svg+xml,%3Csvg%20width%3D%2221%22%20height%3D%2220%22%20viewBox%3D%220%200%2021%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ccircle%20fill%3D%22%23FBDA5A%22%20cx%3D%222%22%20cy%3D%222%22%20r%3D%222%22%2F%3E%3C%2Fsvg%3E');
+        background-position: top right 4px;
+        z-index: 2;
+        @include breakpoint(large down){
+            width: calc(100% - 722px);
+        }
+        @include breakpoint(medium down){
+            top: 83px;
+            left: auto;
+            right: 0;
+            width: 138px;
+        }
+        @include breakpoint(small down){
+            display: none;
+        }
+    }
+    &_block{
+        position: relative;
+        background-color: $main-gray;
+        padding: 50px 50px 80px 120px;
+        max-width: 717px;
+        margin-left: auto;
+        @include breakpoint(medium down){
+            padding: 50px 93px 80px 48px;
+            max-width: none;
+        }
+        @include breakpoint(small down){
+            padding: 52px 20px 60px;
+        }
+    }
+    &_header{
+        font-size: 22px;
+        position: absolute;
+        top: -12px;
+        left: 50px;
+        @include breakpoint(small down){
+            left: 20px;
+        }
+    }
+    &_content{
+        font-size: 13px;
+        line-height: 2.3;
+        font-weight: 600;
+        margin: 0;
+    }
+    &_signs{
+        position: absolute;
+        bottom: -54px;
+        right: 50px;
+        @include breakpoint(medium down){
+            bottom: -40px;
+            right: 45px;
+            img{
+                max-width: 154px;
+            }
+        }
+
+        @include breakpoint(small down){
+            right: 40px;
+            bottom: -10px;
+            img{
+                max-width: 90px;
+            }
+        }
+    }
+}

@@ -120,16 +120,16 @@
     }
     &_numbers{
         margin-top: 126px;
-        margin-bottom: 120px;
+        margin-bottom: 72px;
         padding: 0 45px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         @include breakpoint(medium down){
-            margin: 95px 0 120px;
+            margin: 95px 0 72px;
         }
         @include breakpoint(small down){
-            margin: 80px 0 46px;
+            margin: 80px 0 12px;
             padding: 0 33px;
         }
         &_row{
