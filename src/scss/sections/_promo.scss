@@ -1,23 +1,36 @@
 .promo{
     position: relative;
     height: 100vh;
-    min-height: 500px;
+    min-height: 540px;
     display: flex;
     align-items: center;
-    padding: 0 60px;
+    padding: 0 135px;
+    max-width: 1920px;
+    margin: auto;
+    @include breakpoint(large down){
+        padding: 0 125px;
+    }
+    @include breakpoint(medium down){
+        padding: 0 60px;
+    }
     @include breakpoint(small down){
-        padding: 0 30px;
+        padding: 0 24px;
     }
     &_inner{
         width: 100%;
+        display: flex;
+        align-items: center;
     }
     &_logo{
         position: absolute;
         top: 32px;
-        left: 20px;
+        left: 35px;
         width: 180px;
         transform: translateY(0);
         transition: 400ms;
+        @include breakpoint(medium down){
+            left: 30px;
+        }
         &.is_hidden{
             @include breakpoint(small down){
                 transform: translateY(-42px);
@@ -34,9 +47,52 @@
             z-index: 3;
         }
     }
-    &_header{
+    &_mail{
+        position: absolute;
+        top: 47px;
+        right: 66px;
+        display: flex;
+        align-items: center;
+        color: $dark-gray;
+        font-weight: 600;
+        background: $white;
+        box-shadow: 0 0 5px 5px $white;
+        transform: translateY(0);
+        transition: 400ms;
+        &.is_hidden{
+            @include breakpoint(small down){
+                transform: translateY(-42px);
+            }
+        }
+        @include breakpoint(medium down){
+            right: 40px;
+        }
         @include breakpoint(small down){
-            max-width: 66vw;
+            position: fixed;
+            top: 11px;
+            right: 55px;
+            z-index: 3;
+            font-size: 16px;
+        }
+        svg{
+            margin-right: 10px;
+        }
+    }
+    &_content{
+        width: 100%;
+        max-width: 670px;
+        @include breakpoint(medium down){
+            max-width: 570px;
+        }
+    }
+    &_header{
+        text-shadow: 1px 0 0 $white,
+                     1px 1px 0 $white,
+                     0 1px 0 $white,
+                     0 -1px 0 $white,
+                     -1px 0 0 $white,
+                     0 0 10px $white;
+        @include breakpoint(small down){
             font-size: 6.9vw;
             img{
                 width: 34vw;
@@ -44,40 +100,101 @@
             }
         }
     }
+    &_form{
+        margin-top: 20px;
+        .form{
+            &_input{
+                position: relative;
+                margin: 0;
+                display: grid;
+                grid-template-columns: 1fr minmax(auto, 270px);
+                column-gap: 30px;
+                @include breakpoint(medium down){
+                    grid-template-columns: 1fr minmax(auto, 170px);
+                }
+                @include breakpoint(small down){
+                    display: block;
+                }
+                [type="email"]{
+                    padding-right: 68px;
+                }
+            }
+            &_block_bottom{
+                margin-top: 17px;
+            }
+        }
+        .button{
+            padding-top: 0;
+            padding-bottom: 0;
+            height: auto;
+            min-width: auto;
+            @include breakpoint(small down){
+                position: absolute;
+                right: 2px;
+                top: 2px;
+                width: 44px;
+                height: calc(100% - 4px);
+                text-indent: -9999px;
+                padding: 0;
+                justify-content: center;
+                &:hover span{
+                    transform: none;
+                }
+            }
+        }
+    }
+    &_image{
+        position: absolute;
+        top: 50%;
+        right: 64px;
+        transform: translateY(-50%);
+        z-index: -1;
+        @include breakpoint(large down){
+            right: 0;
+            width: 420px;
+        }
+        @include breakpoint(small down){
+            width: 330px;
+            transform: translate(45%, -50%);
+        }
+    }
     &_arrow{
         position: absolute;
-        left: 15px;
-        bottom: 45px;
-        transform: rotate(90deg);
+        left: 45px;
+        bottom: 54px;
         width: 45px;
         height: 45px;
         display: flex;
         align-items: center;
         justify-content: center;
         transition: 400ms;
-        @include breakpoint(large down){
-            width: 60px;
-            height: 60px;
-            left: 43px;
-            bottom: 35px;
-        }
+        // @include breakpoint(medium down){
+        //     width: 60px;
+        //     height: 60px;
+        //     left: 43px;
+        //     bottom: 35px;
+        // }
+        // @include breakpoint(small down){
+        //     width: 34px;
+        //     height: 34px;
+        //     left: 5px;
+        // }
         @include breakpoint(small down){
-            width: 34px;
-            height: 34px;
-            left: 5px;
+            left: calc(50% - 22.5px);
+            bottom: 30px;
         }
         &:hover{
             background-color: $primary-color;
         }
         svg{
-            @include breakpoint(large down){
-                width: 31px;
-                height: 17px;
-            }
-            @include breakpoint(small down){
-                width: 18px;
-                height: 11px;
-            }
+            // @include breakpoint(large down){
+            //     width: 31px;
+            //     height: 17px;
+            // }
+            // @include breakpoint(small down){
+            //     width: 18px;
+            //     height: 11px;
+            // }
         }
     }
 }

@@ -26,6 +26,18 @@
             display: none;
         }
     }
+    &_header{
+        color: $medium-gray;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 17px;
+        @include breakpoint(small down){
+            font-size: 15px;
+            font-size: 4.4vw;
+            margin-bottom: 14px;
+        }
+    }
     &_block{
         background-color: $main-gray;
         position: relative;
@@ -84,7 +96,6 @@
         }
     }
     &-error{
-        margin-top: 6px;
         opacity: 0;
         transform: translateY(-10px);
         transition: 300ms;
@@ -92,12 +103,14 @@
         height: 0;
         @include breakpoint(small down){
             font-size: 12px;
-            margin-top: 2px;
-            margin-bottom: 2px;
+            margin-bottom: 4px;
         }
         &.is-visible{
             opacity: 1;
-            transform: translateY(0);
+            transform: translateY(6px);
+            @include breakpoint(small down){
+                transform: translateY(2px);
+            }
         }
     }
     &_status{
@@ -116,6 +129,7 @@
     opacity: 0;
     transform: translateY(-10px);
     // color: $medium-gray;
+    height: 0;
     @include breakpoint(small down){
         font-size: 12px;
     }

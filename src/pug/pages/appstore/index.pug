@@ -1,11 +1,8 @@
-- const title = 'Find the difference'
-- const descr = 'Find lighter color'
+- const title = 'HoleFeed!'
+- const descr = 'Don\'t eat trains'
 - const domain = 'lemons.studio'
 
-mixin icon(name, size, color, viewbox)
-    - viewbox = viewbox || size
-    svg(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width=size[0] height=size[1] viewbox=viewbox ? "0 0 " + viewbox[0] + " " + viewbox[1] : "")
-        use(fill=color, xlink:href='/assets/img/sprite_store.svg#' + name)
+include ../../components/_iconsAppstore
 
 html(lang="en")
     head
@@ -40,6 +37,22 @@ html(lang="en")
 
         //- Styles
         link(rel="stylesheet", href="/css/appstore.css")
+        // Facebook Pixel Code
+        script.
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '825767187808741');
+            fbq('track', 'PageView');
+        noscript
+            img(height='1', width='1', style='display:none', src='https://www.facebook.com/tr?id=825767187808741&ev=PageView&noscript=1')
+        // End Facebook Pixel Code
+
     body
         main.wrap
             .store
@@ -49,19 +62,20 @@ html(lang="en")
                     .store_app_info
                         .store_app_info_top
                             p.store_app_title
-                                | Find the difference
+                                =title
                             small.store_app_slogan
-                                | Find lighter color
+                                =descr
                         .store_app_info_bottom
-                            a.button(href="#")
+                            button#get.button
                                 | GET
                             //- a.button.button--dots(href="#")
                                 +icon('dots', [16, 4])
                 ul.store_features
                     li.store_feature
                         .store_feature_icon
-                            each _ in Array(5)
+                            each _ in Array(4)
                                 +icon('star', [18, 16])
+                            +icon('halfstar', [8, 16])
                         p.store_feature_label
                             | 4.5, 64 Ratings
                     //- li.store_feature
@@ -81,10 +95,11 @@ html(lang="en")
                         p.store_feature_label
                             | Age Rating
                 .slider
-                    each _, i in Array(4)
+                    each _, i in Array(5)
                         .slider_item
                             img(srcset=`/assets/img/appstore/screenshots/${i+1}@2x.jpg 2x, /assets/img/appstore/screenshots/${i+1}.jpg 1x` src=`/assets/img/appstore/screenshots/${i+1}.jpg` alt=`Screenshot ${i+1}`)
-                //- .content
+                .content
                     p
-                        | Guide a mother and her child as they embark on a journey through magical architecture, discovering illusionary pathways and delig
+                        | The hole is back. New control give you more satisfaction. We added dynamic obstacles, so please don't eat trains.
+
         script(src="/js/appstore.min.js")

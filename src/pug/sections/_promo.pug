@@ -1,13 +1,30 @@
 section.promo(data-magellan-target="main")
     #main
     include ../components/_logo
-    .grid-container.promo_inner
-        h1.promo_header
-            | We fight with mediocrity!
-            br
-            | by telling unique visual stories.
-            br
-            | Lemons team creates unique animation videos
-            //- img(src="./assets/img/words/differently.png" srcset="./assets/img/words/differently.png 1x, ./assets/img/words/differently@2x.png 2x" alt="differently")
-    a.promo_arrow(href="#about" data-smooth-scroll data-animation-duration="1000" data-animation-easing='swing')
-        +icon('arrow', [24, 14], '#414141')
+    - const rnd = 3;
+    .promo_inner
+        .promo_content
+            h1.promo_header
+                | We fight mediocrity!
+                br
+                | by telling unique visual stories.
+                br
+                | Lemons team creates unique animation videos
+                //- img(src="./assets/img/words/differently.png" srcset="./assets/img/words/differently.png 1x, ./assets/img/words/differently@2x.png 2x" alt="differently")
+            form.promo_form(data-abide novalidate data-id=rnd)
+                p.form_header
+                    | Let's discuss your project!
+                .form_input
+                    input(type="email" name=`email` placeholder="Email" aria-errormessage=`email_error${rnd}` required)
+                    button.button(type="submit" id=`formButton${rnd}`)
+                        | Send
+                        include ../components/_button_icon
+                span.form-error(id=`email_error${rnd}`)
+                    | Enter the correct email
+                .help-text(id=`formMessage${rnd}`)
+                    | We've got your message and will answer soon
+                input(type="hidden" name="formtype" value="promo")
+        .promo_image
+            img(srcset="./assets/img/tree.png 1x, ./assets/img/tree@2x.png 2x" src="./assets/img/tree.png", alt="Lemon's tree")
+    a.promo_arrow(href="#about" data-smooth-scroll data-animation-easing='swing')
+        +icon('arrow_big', [24, 32], '#454545')

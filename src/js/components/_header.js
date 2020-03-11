@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import { Foundation } from '../lib/foundation-explicit-pieces';
 
-const header = $('.nav, .promo_logo, .nav_hamb--menu');
+const header = $('.nav, .promo_logo, .nav_hamb--menu, .promo_mail');
 let scrolling = false,
     prev_top = 0,
     scrollDelta = 10,

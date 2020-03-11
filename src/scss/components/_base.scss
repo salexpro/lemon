@@ -37,9 +37,10 @@ html, body{
     // align-items: stretch;
     // justify-content: flex-start;
     // min-height: 100vh;
-    padding-right: 75px;
+    margin-right: 75px;
+    position: relative;
     @include breakpoint(small down){
-        padding-right: 0;
+        margin-right: 0;
     }
 }
 

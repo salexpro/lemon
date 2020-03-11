@@ -41,12 +41,23 @@ try {
         case 'contact':
             $mail->Subject = '🍋 Lemons animation studio // Project request';
             $mail->Body = "
-                Hi <strong>$name</strong>, we got your project request. We connect with you within next 24 hours. 
+                Hi <strong>$name</strong>, we received your request. We’ll get in touch with you within next 24 hours. 
                 <br><br>
                 <strong>Your email:</strong> $email<br>
                 <strong>Phone or Skype id:</strong> $phone
                 <br><br>
-                --
+                --<br>
+                <a href=\"https//lemons.studio\">Lemons.studio</a>";
+
+            break;
+        case 'promo':
+            $mail->Subject = '🍋 Lemons animation studio // Project request';
+            $mail->Body = "
+                Hi, we received your request. We’ll get in touch with you within next 24 hours. 
+                <br><br>
+                <strong>Your email:</strong> $email<br>
+                <br><br>
+                --<br>
                 <a href=\"https//lemons.studio\">Lemons.studio</a>";
 
             break;

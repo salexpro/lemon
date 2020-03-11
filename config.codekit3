@@ -15,16 +15,8 @@
 		"uuidString": "F1EFA6C6-105C-418D-BECE-C2E49FE54D13"
 		}
 	],
-"creatorBuild": "29156",
+"creatorBuild": "31934",
 "files": {
-	"/.babelrc": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/build/.babelrc",
-		"oF": 1
-		},
 	"/.browserslistrc": {
 		"cB": 0,
 		"ft": 8192,
@@ -48,6 +40,17 @@
 		"oA": 1,
 		"oAP": "/build/.gitignore",
 		"oF": 1
+		},
+	"/babel.config.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/babel.config.min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
 		},
 	"/backend/.gitignore": {
 		"cB": 0,
@@ -677,6 +680,14 @@
 		"oAP": "/build/build",
 		"oF": 0
 		},
+	"/build.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/build.zip",
+		"oF": 1
+		},
 	"/docs": {
 		"ft": 65536,
 		"oA": 1,
@@ -767,6 +778,71 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
+		},
+	"/node_modules/sweetalert2/src/animations.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/sweetalert2/css/animations.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/sweetalert2/src/mixins.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/sweetalert2/css/mixins.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/sweetalert2/src/sweetalert2.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/sweetalert2/css/sweetalert2.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/sweetalert2/src/toasts.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/sweetalert2/css/toasts.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/sweetalert2/src/variables.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/sweetalert2/css/variables.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
 		},
 	"/node_modules/throttle-debounce/dist/index.esm.js": {
 		"bF": 0,
@@ -1188,9 +1264,9 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/img/appstore/Icon.jpg": {
+	"/src/assets/img/appstore/icon.jpg": {
 		"ft": 16384,
-		"iS": 112504,
+		"iS": 8894,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/build/assets/img/appstore/icon.jpg",
@@ -1199,9 +1275,9 @@
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/img/appstore/Icon@2x.jpg": {
+	"/src/assets/img/appstore/icon@2x.jpg": {
 		"ft": 16384,
-		"iS": 254715,
+		"iS": 20461,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/build/assets/img/appstore/icon@2x.jpg",
@@ -1212,7 +1288,7 @@
 		},
 	"/src/assets/img/appstore/screenshots/1.jpg": {
 		"ft": 16384,
-		"iS": 28967,
+		"iS": 22581,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/build/assets/img/appstore/screenshots/1.jpg",
@@ -1221,9 +1297,9 @@
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/img/appstore/screenshots/1@2x.jpg": {
+	"/src/assets/img/appstore/screenshots/1@2x.jpeg": {
 		"ft": 16384,
-		"iS": 70154,
+		"iS": 216717,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/build/assets/img/appstore/screenshots/1@2x.jpg",
@@ -1234,7 +1310,7 @@
 		},
 	"/src/assets/img/appstore/screenshots/2.jpg": {
 		"ft": 16384,
-		"iS": 39985,
+		"iS": 23141,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/build/assets/img/appstore/screenshots/2.jpg",
@@ -1243,9 +1319,9 @@
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/img/appstore/screenshots/2@2x.jpg": {
+	"/src/assets/img/appstore/screenshots/2@2x.jpeg": {
 		"ft": 16384,
-		"iS": 80098,
+		"iS": 327419,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/build/assets/img/appstore/screenshots/2@2x.jpg",
@@ -1256,7 +1332,7 @@
 		},
 	"/src/assets/img/appstore/screenshots/3.jpg": {
 		"ft": 16384,
-		"iS": 47383,
+		"iS": 26300,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/build/assets/img/appstore/screenshots/3.jpg",
@@ -1265,9 +1341,9 @@
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/img/appstore/screenshots/3@2x.jpg": {
+	"/src/assets/img/appstore/screenshots/3@2x.jpeg": {
 		"ft": 16384,
-		"iS": 109878,
+		"iS": 344017,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/build/assets/img/appstore/screenshots/3@2x.jpg",
@@ -1278,7 +1354,7 @@
 		},
 	"/src/assets/img/appstore/screenshots/4.jpg": {
 		"ft": 16384,
-		"iS": 30962,
+		"iS": 18681,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/build/assets/img/appstore/screenshots/4.jpg",
@@ -1287,12 +1363,34 @@
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/img/appstore/screenshots/4@2x.jpg": {
+	"/src/assets/img/appstore/screenshots/4@2x.jpeg": {
 		"ft": 16384,
-		"iS": 76423,
+		"iS": 164828,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/build/assets/img/appstore/screenshots/4@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/appstore/screenshots/5.jpg": {
+		"ft": 16384,
+		"iS": 23508,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/appstore/screenshots/5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/appstore/screenshots/5@2x.jpeg": {
+		"ft": 16384,
+		"iS": 306735,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/appstore/screenshots/5@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -1634,7 +1732,7 @@
 		},
 	"/src/assets/img/clients/voxbone.png": {
 		"ft": 32768,
-		"iS": 1347,
+		"iS": 2302,
 		"oA": 0,
 		"oAP": "/build/assets/img/clients/voxbone.png",
 		"oF": 0,
@@ -1719,6 +1817,158 @@
 		"opt": 1,
 		"oT": 1,
 		"q": 100
+		},
+	"/src/assets/img/differences/icon.jpg": {
+		"ft": 16384,
+		"iS": 11278,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/differences/icon.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/differences/icon@2x.jpg": {
+		"ft": 16384,
+		"iS": 28099,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/differences/icon@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/differences/screenshots/1.jpg": {
+		"ft": 16384,
+		"iS": 37315,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/differences/screenshots/1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/differences/screenshots/1@2x.jpg": {
+		"ft": 16384,
+		"iS": 72040,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/differences/screenshots/1@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/differences/screenshots/2.jpg": {
+		"ft": 16384,
+		"iS": 28776,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/differences/screenshots/2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/differences/screenshots/2@2x.jpg": {
+		"ft": 16384,
+		"iS": 108499,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/differences/screenshots/2@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/differences/screenshots/3.jpg": {
+		"ft": 16384,
+		"iS": 34764,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/differences/screenshots/3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/differences/screenshots/3@2x.jpg": {
+		"ft": 16384,
+		"iS": 69662,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/differences/screenshots/3@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/differences/screenshots/4.jpg": {
+		"ft": 16384,
+		"iS": 57530,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/differences/screenshots/4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/differences/screenshots/4@2x.jpg": {
+		"ft": 16384,
+		"iS": 135990,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/differences/screenshots/4@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/differences/screenshots/5.jpg": {
+		"ft": 16384,
+		"iS": 49053,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/differences/screenshots/5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/differences/screenshots/5@2x.jpg": {
+		"ft": 16384,
+		"iS": 105617,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/differences/screenshots/5@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/icons/arrow_promo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/icons/arrow_promo.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103269715967,
+		"prP": 0
+		},
+	"/src/assets/img/icons/mail.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/icons/mail.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103269715967,
+		"prP": 0
 		},
 	"/src/assets/img/logo.svg": {
 		"ft": 2097152,
@@ -2179,6 +2429,28 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/src/assets/img/tree.png": {
+		"ft": 32768,
+		"iS": 168230,
+		"oA": 0,
+		"oAP": "/build/assets/img/tree.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/tree@2x.png": {
+		"ft": 32768,
+		"iS": 561708,
+		"oA": 0,
+		"oAP": "/build/assets/img/tree@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/assets/img/words/differently.png": {
 		"ft": 32768,
 		"iS": 8020,
@@ -2449,6 +2721,17 @@
 		"oO": 0,
 		"oS": 0
 		},
+	"/src/js/differences.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/build/js/differences.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/src/js/lib/fastnav.js": {
 		"bF": 0,
 		"ft": 64,
@@ -2532,6 +2815,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/components/_iconsAppstore.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/pug/components/_iconsAppstore.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/components/_logo.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -2607,15 +2900,26 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
-		"oAP": "/build/pug/pages/appstore/favicon.ico",
-		"oF": 0
+		"oAP": "/System/Volumes/Data/Users/salexpro/Projects/lemon/build/appstore/favicon.ico",
+		"oF": 6
 		},
 	"/src/pug/pages/appstore/favicon/android-chrome-192x192.png": {
 		"ft": 32768,
-		"iS": 5283,
+		"iS": 22286,
 		"oA": 0,
-		"oAP": "/build/pug/pages/appstore/favicon/android-chrome-192x192.png",
-		"oF": 0,
+		"oAP": "/System/Volumes/Data/Users/salexpro/Projects/lemon/build/appstore/favicon/android-chrome-192x192.png",
+		"oF": 6,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/pug/pages/appstore/favicon/android-chrome-384x384.png": {
+		"ft": 32768,
+		"iS": 69913,
+		"oA": 0,
+		"oAP": "/System/Volumes/Data/Users/salexpro/Projects/lemon/build/appstore/favicon/android-chrome-384x384.png",
+		"oF": 6,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
@@ -2625,8 +2929,8 @@
 		"ft": 32768,
 		"iS": 14712,
 		"oA": 0,
-		"oAP": "/build/pug/pages/appstore/favicon/android-chrome-512x512.png",
-		"oF": 0,
+		"oAP": "/System/Volumes/Data/Users/salexpro/Projects/lemon/build/appstore/favicon/android-chrome-512x512.png",
+		"oF": 6,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
@@ -2634,10 +2938,10 @@
 		},
 	"/src/pug/pages/appstore/favicon/apple-touch-icon.png": {
 		"ft": 32768,
-		"iS": 4955,
+		"iS": 20109,
 		"oA": 0,
-		"oAP": "/build/pug/pages/appstore/favicon/apple-touch-icon.png",
-		"oF": 0,
+		"oAP": "/System/Volumes/Data/Users/salexpro/Projects/lemon/build/appstore/favicon/apple-touch-icon.png",
+		"oF": 6,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
@@ -2648,15 +2952,15 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
-		"oAP": "/build/pug/pages/appstore/favicon/browserconfig.xml",
-		"oF": 0
+		"oAP": "/System/Volumes/Data/Users/salexpro/Projects/lemon/build/appstore/favicon/browserconfig.xml",
+		"oF": 6
 		},
 	"/src/pug/pages/appstore/favicon/favicon-16x16.png": {
 		"ft": 32768,
-		"iS": 760,
+		"iS": 968,
 		"oA": 0,
-		"oAP": "/build/pug/pages/appstore/favicon/favicon-16x16.png",
-		"oF": 0,
+		"oAP": "/System/Volumes/Data/Users/salexpro/Projects/lemon/build/appstore/favicon/favicon-16x16.png",
+		"oF": 6,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
@@ -2664,21 +2968,10 @@
 		},
 	"/src/pug/pages/appstore/favicon/favicon-32x32.png": {
 		"ft": 32768,
-		"iS": 1096,
+		"iS": 1843,
 		"oA": 0,
-		"oAP": "/build/pug/pages/appstore/favicon/favicon-32x32.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/src/pug/pages/appstore/favicon/mstile-144x144.png": {
-		"ft": 32768,
-		"iS": 4268,
-		"oA": 0,
-		"oAP": "/build/pug/pages/appstore/favicon/mstile-144x144.png",
-		"oF": 0,
+		"oAP": "/System/Volumes/Data/Users/salexpro/Projects/lemon/build/appstore/favicon/favicon-32x32.png",
+		"oF": 6,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
@@ -2686,43 +2979,10 @@
 		},
 	"/src/pug/pages/appstore/favicon/mstile-150x150.png": {
 		"ft": 32768,
-		"iS": 4249,
+		"iS": 14276,
 		"oA": 0,
-		"oAP": "/build/pug/pages/appstore/favicon/mstile-150x150.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/src/pug/pages/appstore/favicon/mstile-310x150.png": {
-		"ft": 32768,
-		"iS": 4683,
-		"oA": 0,
-		"oAP": "/build/pug/pages/appstore/favicon/mstile-310x150.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/src/pug/pages/appstore/favicon/mstile-310x310.png": {
-		"ft": 32768,
-		"iS": 9418,
-		"oA": 0,
-		"oAP": "/build/pug/pages/appstore/favicon/mstile-310x310.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/src/pug/pages/appstore/favicon/mstile-70x70.png": {
-		"ft": 32768,
-		"iS": 3000,
-		"oA": 0,
-		"oAP": "/build/pug/pages/appstore/favicon/mstile-70x70.png",
-		"oF": 0,
+		"oAP": "/System/Volumes/Data/Users/salexpro/Projects/lemon/build/appstore/favicon/mstile-150x150.png",
+		"oF": 6,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
@@ -2732,8 +2992,8 @@
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 0,
-		"oAP": "/build/pug/pages/appstore/favicon/safari-pinned-tab.svg",
-		"oF": 0,
+		"oAP": "/System/Volumes/Data/Users/salexpro/Projects/lemon/build/appstore/favicon/safari-pinned-tab.svg",
+		"oF": 6,
 		"opt": 1,
 		"plM": 1103269715967,
 		"prP": 0
@@ -2743,8 +3003,8 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
-		"oAP": "/build/pug/pages/appstore/favicon/site.webmanifest",
-		"oF": 0
+		"oAP": "/System/Volumes/Data/Users/salexpro/Projects/lemon/build/appstore/favicon/site.webmanifest",
+		"oF": 6
 		},
 	"/src/pug/pages/appstore/index.pug": {
 		"cB": 1,
@@ -2753,6 +3013,116 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/appstore/index.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/pages/differences/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/System/Volumes/Data/Users/salexpro/Projects/lemon/build/differences/favicon.ico",
+		"oF": 7
+		},
+	"/src/pug/pages/differences/favicon/android-chrome-192x192.png": {
+		"ft": 32768,
+		"iS": 22170,
+		"oA": 0,
+		"oAP": "/System/Volumes/Data/Users/salexpro/Projects/lemon/build/differences/favicon/android-chrome-192x192.png",
+		"oF": 6,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/pug/pages/differences/favicon/android-chrome-384x384.png": {
+		"ft": 32768,
+		"iS": 64812,
+		"oA": 0,
+		"oAP": "/System/Volumes/Data/Users/salexpro/Projects/lemon/build/differences/favicon/android-chrome-384x384.png",
+		"oF": 6,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/pug/pages/differences/favicon/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 20077,
+		"oA": 0,
+		"oAP": "/System/Volumes/Data/Users/salexpro/Projects/lemon/build/differences/favicon/apple-touch-icon.png",
+		"oF": 6,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/pug/pages/differences/favicon/browserconfig.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/System/Volumes/Data/Users/salexpro/Projects/lemon/build/differences/favicon/browserconfig.xml",
+		"oF": 6
+		},
+	"/src/pug/pages/differences/favicon/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 1311,
+		"oA": 0,
+		"oAP": "/System/Volumes/Data/Users/salexpro/Projects/lemon/build/differences/favicon/favicon-16x16.png",
+		"oF": 6,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/pug/pages/differences/favicon/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 2092,
+		"oA": 0,
+		"oAP": "/System/Volumes/Data/Users/salexpro/Projects/lemon/build/differences/favicon/favicon-32x32.png",
+		"oF": 6,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/pug/pages/differences/favicon/mstile-150x150.png": {
+		"ft": 32768,
+		"iS": 14433,
+		"oA": 0,
+		"oAP": "/System/Volumes/Data/Users/salexpro/Projects/lemon/build/differences/favicon/mstile-150x150.png",
+		"oF": 6,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/pug/pages/differences/favicon/safari-pinned-tab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/System/Volumes/Data/Users/salexpro/Projects/lemon/build/differences/favicon/safari-pinned-tab.svg",
+		"oF": 6,
+		"opt": 1,
+		"plM": 1103269715967,
+		"prP": 0
+		},
+	"/src/pug/pages/differences/favicon/site.webmanifest": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/System/Volumes/Data/Users/salexpro/Projects/lemon/build/differences/favicon/site.webmanifest",
+		"oF": 6
+		},
+	"/src/pug/pages/differences/index.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/differences/index.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2978,7 +3348,7 @@
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 1,
+		"ma": 0,
 		"oA": 0,
 		"oAP": "/build/css/appstore.css",
 		"oF": 0,
@@ -3309,14 +3679,6 @@
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
-		},
-	"/zimtQAey": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/zimtQAey",
-		"oF": 0
 		}
 	},
 "hooks": [
@@ -3329,10 +3691,11 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 581284959.12128496
+	"lastBuiltDate": 585147538.40992498
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
+	"allowInjectionReloads": 1,
 	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 0,
 	"autoBuildNewItems": 1,
@@ -3344,6 +3707,7 @@
 	"babelConfigType": 2,
 	"babelCustomPluginsList": "",
 	"babelCustomPresetsList": "",
+	"babelExcludeString": "'node_modules/**', 'bower_components/**', /\\/core-js\\//",
 	"babelInsertModuleIDs": 0,
 	"babelModuleID": "",
 	"babelNoComments": 1,
@@ -3563,11 +3927,10 @@
 			}
 		},
 	"babelRetainLines": 0,
+	"babelUseBuiltInsType": 0,
 	"bowerAbbreviatedPath": "bower_components",
-	"bowerAutoCreateInfoFile": 1,
-	"bowerInstallDevDependencies": 0,
-	"bowerSaveDependencies": 1,
-	"bowerSaveDevDependencies": 1,
+	"bowerForceLatestOnConflict": 1,
+	"bowerTargetDependencyListType": 1,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
 	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead, IE >= 9",
@@ -3712,6 +4075,7 @@
 			"flagValue": -1
 			}
 		},
+	"environmentVariablesString": "NODE_ENV:::production",
 	"esLintConfigFileHandlingType": 2,
 	"esLintECMAVersion": 7,
 	"esLintEnvironmentsMask": 8193,
@@ -3813,6 +4177,10 @@
 			"optionString": "'all'"
 			},
 		"default-case": {
+			"active": 0,
+			"optionString": ""
+			},
+		"default-param-last": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -4162,6 +4530,10 @@
 			},
 		"no-implied-eval": {
 			"active": 0,
+			"optionString": ""
+			},
+		"no-import-assign": {
+			"active": 1,
 			"optionString": ""
 			},
 		"no-inline-comments": {
@@ -4572,6 +4944,10 @@
 			"active": 0,
 			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
+		"prefer-named-capture-group": {
+			"active": 0,
+			"optionString": ""
+			},
 		"prefer-numeric-literals": {
 			"active": 0,
 			"optionString": ""
@@ -4583,6 +4959,10 @@
 		"prefer-promise-reject-errors": {
 			"active": 0,
 			"optionString": "{'allowEmptyReject': false}"
+			},
+		"prefer-regex-literals": {
+			"active": 0,
+			"optionString": ""
 			},
 		"prefer-rest-params": {
 			"active": 0,
@@ -5192,7 +5572,6 @@
 		"autoOutputPathStyle": 2,
 		"createSourceMap": 0,
 		"enableJavascript": 0,
-		"ieCompatibility": 1,
 		"mathStyle": 0,
 		"outputStyle": 0,
 		"rewriteURLStyle": 0,
@@ -5325,8 +5704,16 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"npmAbbreviatedPath": "",
+	"npmCreatePackageLock": 1,
+	"npmInstallOptionalDependencies": 0,
+	"npmSaveExactVersion": 0,
+	"npmTargetDependencyListType": 1,
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
+	"rollupExternals": "",
+	"rollupReplacements": "process.env.NODE_ENV:::$NODE_ENV,,,ENVIRONMENT:::$NODE_ENV",
+	"rollupTreeshakingEnabled": 1,
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, /storage/framework/sessions, docs, node_modules, build.zip",
 	"sourceFolderName": "src",
 	"susyVersion": 3,

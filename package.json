@@ -25,6 +25,7 @@
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1",
     "svg4everybody": "^2.1.9",
+    "sweetalert2": "^8.13.0",
     "throttle-debounce": "^2.1.0"
   },
   "devDependencies": {

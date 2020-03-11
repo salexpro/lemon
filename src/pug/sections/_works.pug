@@ -8,6 +8,10 @@
             title: 'Finance',
             label: 'finance'
         },
+        {
+            title: 'UA videos',
+            label: 'uavideos'
+        },
         //- {
         //-     title: 'Mobile apps',
         //-     label: 'mobile'
@@ -150,6 +154,41 @@
             header: 'Android Wear video for Google',
             labels: ['interface']
         },
+        {
+            id: '310400051',
+            header: 'StreamDesk promo video',
+            labels: ['crypto', 'minimalistic']
+        },
+        {
+            id: '357807727',
+            header: 'Gazprom Neft Promo video',
+            labels: ['minimalistic']
+        },
+        {
+            id: '358313654',
+            header: 'BAND Great Coaches',
+            labels: ['character']
+        },
+        {
+            id: '389681162',
+            header: 'Crypto Price Index Explainer',
+            labels: ['finance', 'minimalistic']
+        },
+        {
+            id: '377088685',
+            header: 'Casinomia - 3d character animation',
+            labels: ['character']
+        },
+        {
+            id: '389460334',
+            header: 'Joom video',
+            labels: ['uavideos']
+        },
+        {
+            id: '390840181',
+            header: 'Emeals UA video with custom illustrations',
+            labels: ['uavideos']
+        }
     ]
 
 mixin work(data, currCat)
@@ -188,10 +227,10 @@ section#works.works(data-magellan-target="works")
                     .works_carousel(id=`work_tab_${category.label}` class=(i==0)?'is-active':false)
                         .grid-x.grid-margin-x.large-up-4.medium-up-3.works_carousel_slick
                             - const works_filtered = (category.label !== 'all') ? works.filter(el => el.labels.includes(category.label)) : works;
-                            each work in works_filtered
+                            each work in works_filtered.reverse()
                                 +work(work, category.label)
                         .works_bottom
-                            a.button.medium(href=`/works#${category.label}`)
+                            a.button.medium(href='https://vimeo.com/lemonvideo' target='_blank')
                                 | Watch all videos
                                 span.button_icon
                                     +icon('arrow', [24, 14], '#454545')

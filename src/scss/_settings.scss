@@ -156,6 +156,9 @@ $header-styles: (
     'h5': ('fs': 18),
     'h6': ('fs': 16),
   ),
+  large: (
+    'h1': ('fs': 42),
+  )
 );
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 100%;
